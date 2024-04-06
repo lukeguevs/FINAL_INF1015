@@ -21,6 +21,17 @@ Chess::Chess(QWidget *parent)
         }
     }
 
+    // Load piece image paths
+    QDir dir(":/Images/");
+    QStringList filters;
+    filters << "*.png";
+    dir.setNameFilters(filters);
+    QStringList pieceFiles = dir.entryList();
+
+    for (const QString& file : pieceFiles) {
+        QString pieceName = file.left(file.lastIndexOf("."));
+        pieceImagePaths[pieceName] = ":/pieces/" + file;
+    }
 }
 
 void Chess::paintEvent(QPaintEvent* event)
@@ -32,21 +43,19 @@ void Chess::paintEvent(QPaintEvent* event)
 
 void Chess::mousePressEvent(QMouseEvent *event)
 {
-    // Handle mouse clicks
     if (event->button() == Qt::LeftButton) {
-        // Calculate the square clicked
+        
         int row = event->y() / squareSize;
         int col = event->x() / squareSize;
-        // Perform action based on the square clicked
-        // For example, you can move pieces here
+        
     }
 }
 
 void Chess::drawChessboard(QPainter* painter)
 {
-    // Draw the chessboard
-    QColor lightColor(209, 139, 71); // Light brown color
-    QColor darkColor(255, 206, 158); // Dark brown color
+    
+    QColor lightColor(209, 139, 71); 
+    QColor darkColor(255, 206, 158); 
 
     for (int row = 0; row < 8; ++row) {
         for (int col = 0; col < 8; ++col) {

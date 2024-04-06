@@ -21,6 +21,9 @@
       <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
       <Extensions>ts</Extensions>
     </Filter>
+    <Filter Include="Images">
+      <UniqueIdentifier>{17dc2bef-a210-4dcb-83a1-d35f43352a68}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="Chess.qrc">
@@ -35,14 +38,45 @@
     <ClCompile Include="Chess.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ResourceCompile Include="$pro_name$.rc">
-    </ResourceCompile>
-    <None Include="$pro_name$.ico">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="$pro_name$.def">
-      <Filter>Resource Files</Filter>
-    </None>
-
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\OneDrive\Pictures\Chess\Bishop-Black.png">
+      <Filter>Images</Filter>
+    </Image>
+    <Image Include="..\..\..\..\OneDrive\Pictures\Chess\Bishop-White.png">
+      <Filter>Images</Filter>
+    </Image>
+    <Image Include="..\..\..\..\OneDrive\Pictures\Chess\King-Black.png">
+      <Filter>Images</Filter>
+    </Image>
+    <Image Include="..\..\..\..\OneDrive\Pictures\Chess\Knight-Black.png">
+      <Filter>Images</Filter>
+    </Image>
+    <Image Include="..\..\..\..\OneDrive\Pictures\Chess\Knight-White.png">
+      <Filter>Images</Filter>
+    </Image>
+    <Image Include="..\..\..\..\OneDrive\Pictures\Chess\Pawn-Black.png">
+      <Filter>Images</Filter>
+    </Image>
+    <Image Include="..\..\..\..\OneDrive\Pictures\Chess\Pawn-White.png">
+      <Filter>Images</Filter>
+    </Image>
+    <Image Include="..\..\..\..\OneDrive\Pictures\Chess\Queen-Black.png">
+      <Filter>Images</Filter>
+    </Image>
+    <Image Include="..\..\..\..\OneDrive\Pictures\Chess\Queen-White.png">
+      <Filter>Images</Filter>
+    </Image>
+    <Image Include="..\..\..\..\OneDrive\Pictures\Chess\Rook-Black.png">
+      <Filter>Images</Filter>
+    </Image>
+    <Image Include="..\..\..\..\OneDrive\Pictures\Chess\Rook-White.png">
+      <Filter>Images</Filter>
+    </Image>
   </ItemGroup>
 </Project>
