@@ -21,8 +21,7 @@ Chess::Chess(QWidget *parent)
         }
     }
 
-    // Load piece image paths
-    QDir dir(": /Chess/ ");
+    QDir dir(":/Chess/");
     QStringList filters;
     filters << "*.png";
     dir.setNameFilters(filters);
