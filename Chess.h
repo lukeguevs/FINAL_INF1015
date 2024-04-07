@@ -6,10 +6,11 @@
 
 
 
-#include <QWidget>
+
+#include <QMainWindow>
 #include "ChessBoard.hpp"
 
-class Chess : public QWidget
+class Chess : public QMainWindow
 {
     Q_OBJECT
 public:
@@ -19,5 +20,5 @@ protected:
     void paintEvent(QPaintEvent* event) override;
 
 private:
-    ChessBoard* m_board;
+    ChessBoard* chessboard;
 };

@@ -6,6 +6,7 @@
 
 #include "Chess.h"
 #include <QtWidgets/QApplication>
+#include <iostream>
 
 int main(int argc, char* argv[])
 {

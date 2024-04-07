@@ -32,7 +32,6 @@ ChessBoard::ChessBoard(QWidget* parent) : QWidget(parent), squareSize(50)
 void ChessBoard::setSquareSize(int size)
 {
     squareSize = size;
-    // Recalculate square positions if needed
 }
 
 void ChessBoard::setPieceImage(const QString& pieceName, const QPixmap& image)
@@ -73,9 +72,5 @@ void ChessBoard::drawChessboard(QPainter* painter)
 
 void ChessBoard::drawPieces(QPainter* painter)
 {
-    // Example code to draw pieces
-    // You need to implement your own logic here based on the game state
-    painter->drawPixmap(squares[0], pieceImages["Rook-Black"]);
-    painter->drawPixmap(squares[1], pieceImages["Knight-Black"]);
-    // Draw other pieces...
+
 }

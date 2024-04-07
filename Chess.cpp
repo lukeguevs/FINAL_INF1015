@@ -4,16 +4,20 @@
 //École Polytechnique de Montréal
 //Projet Final de INF1015
 
+#pragma once
+#include <QWidget>
 #include "Chess.h"
 
-Chess::Chess(QWidget* parent) : QWidget(parent)
+
+Chess::Chess(QWidget* parent) : QMainWindow(parent)
 {
-    m_board = new ChessBoard(this);
+    chessboard = new ChessBoard(this);
+    setCentralWidget(chessboard); // Set the chessboard as the central widget of the main window
 }
 
 void Chess::paintEvent(QPaintEvent* event)
 {
-    Q_UNUSED(event);
+    QMainWindow::paintEvent(event); // Call base class paintEvent
     // Optionally, you can handle additional painting in the Chess class
     // For example, drawing player information, game status, etc.
 }
