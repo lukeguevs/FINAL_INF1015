@@ -4,9 +4,6 @@
 //École Polytechnique de Montréal
 //Projet Final de INF1015
 
-
-
-
 #include <QMainWindow>
 #include "ChessBoard.hpp"
 

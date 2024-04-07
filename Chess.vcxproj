@@ -95,6 +95,7 @@
     <ClCompile Include="Chess.cpp" />
     <ClCompile Include="ChessBoard.cpp" />
     <ClCompile Include="ChessPiece.cpp" />
+    <ClCompile Include="ChessPieceWidget.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -113,6 +114,7 @@
   <ItemGroup>
     <QtMoc Include="ChessBoard.hpp" />
     <QtMoc Include="ChessPiece.hpp" />
+    <QtMoc Include="ChessPieceWidget.hpp" />
     <ClInclude Include="Images\Rook.h" />
     <ClInclude Include="Rook.cpp" />
   </ItemGroup>
