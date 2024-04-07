@@ -95,6 +95,19 @@
     <ClCompile Include="Chess.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Chess\Bishop-Black.png" />
+    <Image Include="Chess\Bishop-White.png" />
+    <Image Include="Chess\King-Black.png" />
+    <Image Include="Chess\Knight-Black.png" />
+    <Image Include="Chess\Knight-White.png" />
+    <Image Include="Chess\Pawn-Black.png" />
+    <Image Include="Chess\Pawn-White.png" />
+    <Image Include="Chess\Queen-Black.png" />
+    <Image Include="Chess\Queen-White.png" />
+    <Image Include="Chess\Rook-Black.png" />
+    <Image Include="Chess\Rook-White.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
     <Import Project="$(QtMsBuild)\qt.targets" />

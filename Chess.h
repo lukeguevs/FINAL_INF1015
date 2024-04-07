@@ -30,6 +30,7 @@ public:
     void paintEvent(QPaintEvent* event) override;
     void mousePressEvent(QMouseEvent* event) override;
     void drawChessboard(QPainter* painter);
+    void drawPieces(QPainter* painter);
 
 
 private:

@@ -41,4 +41,39 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Chess\Bishop-Black.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Chess\Bishop-White.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Chess\King-Black.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Chess\Knight-Black.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Chess\Knight-White.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Chess\Pawn-Black.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Chess\Pawn-White.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Chess\Queen-Black.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Chess\Queen-White.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Chess\Rook-Black.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Chess\Rook-White.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>

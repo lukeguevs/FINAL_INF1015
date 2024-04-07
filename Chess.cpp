@@ -22,7 +22,7 @@ Chess::Chess(QWidget *parent)
     }
 
     // Load piece image paths
-    QDir dir(":/Images/");
+    QDir dir(": /Chess/ ");
     QStringList filters;
     filters << "*.png";
     dir.setNameFilters(filters);
@@ -30,7 +30,7 @@ Chess::Chess(QWidget *parent)
 
     for (const QString& file : pieceFiles) {
         QString pieceName = file.left(file.lastIndexOf("."));
-        pieceImagePaths[pieceName] = ":/pieces/" + file;
+        pieceImagePaths[pieceName] = ":/Chess/" + file;
     }
 }
 
@@ -66,6 +66,19 @@ void Chess::drawChessboard(QPainter* painter)
                 painter->setBrush(darkColor);
             }
             painter->drawRect(squares[row * 8 + col]);
+        }
+    }
+}
+
+void Chess::drawPieces(QPainter* painter)
+{
+    for (int row = 0; row < 8; ++row) {
+        for (int col = 0; col < 8; ++col) {
+            if ((row == 0 || row == 7) && (col % 7 == 0)) {
+                QString pieceName = (row == 0) ? "Rook-Black" : "Rook-White";
+                QPixmap pieceImage(pieceImagePaths[pieceName]);
+                painter->drawPixmap(squares[row * 8 + col], pieceImage);
+            }
         }
     }
 }
