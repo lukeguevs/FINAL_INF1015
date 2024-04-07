@@ -40,7 +40,10 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Images\Rook.cpp">
+    <ClCompile Include="ChessPiece.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChessBoard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -83,8 +86,16 @@
     <ClInclude Include="Images\Rook.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Images\Header.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Rook.cpp">
+      <Filter>Source Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ChessBoard.hpp">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ChessPiece.hpp">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
 </Project>

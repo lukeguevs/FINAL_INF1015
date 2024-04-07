@@ -1,9 +1,9 @@
 <RCC>
-    <qresource prefix="/Chess">
-        <file>Chess/.png</file>
+    <qresource prefix="/images">
         <file>Chess/Bishop-Black.png</file>
         <file>Chess/Bishop-White.png</file>
         <file>Chess/King-Black.png</file>
+        <file>Chess/King-White.png</file>
         <file>Chess/Knight-Black.png</file>
         <file>Chess/Knight-White.png</file>
         <file>Chess/Pawn-Black.png</file>

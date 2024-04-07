@@ -5,32 +5,19 @@
 //Projet Final de INF1015
 
 
-#pragma once
 
-#include <QtWidgets/QMainWindow>
-#include <QPainter>
-#include <QMouseEvent>
+#include <QWidget>
+#include "ChessBoard.hpp"
 
-#include "ui_Chess.h"
-
-#include <QDir>
-
-class Chess : public QMainWindow
+class Chess : public QWidget
 {
     Q_OBJECT
-
 public:
-    Chess(QWidget *parent = nullptr);
-    ~Chess();
-    void paintEvent(QPaintEvent* event) override;
-    void mousePressEvent(QMouseEvent* event) override;
-    void drawChessboard(QPainter* painter);
-    void drawPieces(QPainter* painter);
+    explicit Chess(QWidget* parent = nullptr);
 
+protected:
+    void paintEvent(QPaintEvent* event) override;
 
 private:
-    int squareSize;
-    QMap<QString, QString> pieceImagePaths;
-    QVector<QRect> squares;
-    Ui::ChessClass ui;
+    ChessBoard* m_board;
 };

@@ -93,7 +93,8 @@
     <QtUic Include="Chess.ui" />
     <QtMoc Include="Chess.h" />
     <ClCompile Include="Chess.cpp" />
-    <ClCompile Include="Images\Rook.cpp" />
+    <ClCompile Include="ChessBoard.cpp" />
+    <ClCompile Include="ChessPiece.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -110,8 +111,10 @@
     <Image Include="Chess\Rook-White.png" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Images\Header.h" />
+    <QtMoc Include="ChessBoard.hpp" />
+    <QtMoc Include="ChessPiece.hpp" />
     <ClInclude Include="Images\Rook.h" />
+    <ClInclude Include="Rook.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
