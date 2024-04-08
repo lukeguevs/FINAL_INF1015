@@ -6,6 +6,8 @@
 
 #pragma once
 #include <QWidget>
+#include <QHBoxLayout>
+#include "ChessPieceWidget.hpp"
 #include "Chess.h"
 
 
@@ -13,6 +15,18 @@ Chess::Chess(QWidget* parent) : QMainWindow(parent)
 {
     chessboard = new ChessBoard(this);
     setCentralWidget(chessboard); // Set the chessboard as the central widget of the main window
+
+    // Create a ChessPieceWidget
+    ChessPieceWidget* piecesWidget = new ChessPieceWidget(this);
+
+    // Add the pieces widget to the main window
+    QWidget* container = new QWidget(this);
+    QHBoxLayout* layout = new QHBoxLayout(container);
+    layout->addWidget(chessboard);
+    layout->addWidget(piecesWidget);
+    layout->setContentsMargins(0, 0, 0, 0); // Remove any margins around the layout
+    container->setLayout(layout); // Set the layout on the container
+    setCentralWidget(container);
 }
 
 void Chess::paintEvent(QPaintEvent* event)

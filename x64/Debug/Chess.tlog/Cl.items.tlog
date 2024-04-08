@@ -1,8 +1,9 @@
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.cpp;C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\Chess.obj
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp;C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\ChessBoard.obj
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPiece.cpp;C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\ChessPiece.obj
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.cpp;C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\Piece.obj
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.cpp;C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\ChessPieceWidget.obj
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\main.cpp;C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\main.obj
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\rcc\qrc_Chess.cpp;C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\qrc_Chess.obj
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\moc\moc_Chess.cpp;C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\moc_Chess.obj
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\moc\moc_ChessBoard.cpp;C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\moc_ChessBoard.obj
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\moc\moc_ChessPiece.cpp;C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\moc_ChessPiece.obj
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\moc\moc_ChessPieceWidget.cpp;C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\moc_ChessPieceWidget.obj

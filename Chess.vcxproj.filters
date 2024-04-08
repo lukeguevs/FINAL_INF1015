@@ -40,7 +40,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ChessPiece.cpp">
+    <ClCompile Include="Piece.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ChessBoard.cpp">
@@ -92,12 +92,12 @@
     <ClInclude Include="Rook.cpp">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Piece.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="ChessBoard.hpp">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="ChessPiece.hpp">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="ChessPieceWidget.hpp">

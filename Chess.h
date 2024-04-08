@@ -6,6 +6,7 @@
 
 #include <QMainWindow>
 #include "ChessBoard.hpp"
+#include "ChessPieceWidget.hpp"
 
 class Chess : public QMainWindow
 {
@@ -18,4 +19,5 @@ protected:
 
 private:
     ChessBoard* chessboard;
+    ChessPieceWidget* chessPieceWidget;
 };

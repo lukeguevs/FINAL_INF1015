@@ -4,44 +4,45 @@
 //École Polytechnique de Montréal
 //Projet Final de INF1015
 
-#include <QWidget>
-#include <QVBoxLayout>
-#include <QListWidget>
-#include <QPushButton>
 
 #include "ChessPieceWidget.hpp"
 
-ChessPieceWidget::ChessPieceWidget(QWidget* parent = nullptr)
+ChessPieceWidget::ChessPieceWidget(QWidget* parent)
         : QWidget(parent)
-    {
-        QVBoxLayout* layout = new QVBoxLayout(this);
-        QListWidget* listWidget = new QListWidget(this);
-        QPushButton* addButton = new QPushButton("Add Piece", this);
-        QPushButton* removeButton = new QPushButton("Remove Piece", this);
+{
+    QVBoxLayout* layout = new QVBoxLayout(this);
+    listWidget = new QListWidget(this);
+    QPushButton* addButton = new QPushButton("Add Piece", this);
+    QPushButton* removeButton = new QPushButton("Remove Piece", this);
 
 
-        listWidget->addItem("Pawn");
-        listWidget->addItem("Rook");
-        listWidget->addItem("Knight");
-        listWidget->addItem("Bishop");
-        listWidget->addItem("Queen");
-        listWidget->addItem("King");
+    listWidget->addItem("Pawn-Black");
+    listWidget->addItem("Pawn-White");
+    listWidget->addItem("Rook-Black");
+    listWidget->addItem("Rook-White");
+    listWidget->addItem("Knight-Black");
+    listWidget->addItem("Knight-White");
+    listWidget->addItem("Bishop-Black");
+    listWidget->addItem("Bishop-White");
+    listWidget->addItem("Queen-Black");
+    listWidget->addItem("Queen-White");
+    listWidget->addItem("King-Black");
+    listWidget->addItem("King-White");
 
-        layout->addWidget(listWidget);
-        layout->addWidget(addButton);
-        layout->addWidget(removeButton);
+    layout->addWidget(listWidget);
+    layout->addWidget(addButton);
+    layout->addWidget(removeButton);
 
-        connect(addButton, &QPushButton::clicked, this, &ChessPieceWidget::addPiece);
-        connect(removeButton, &QPushButton::clicked, this, &ChessPieceWidget::removePiece);
-    }
+    connect(addButton, &QPushButton::clicked, this, &ChessPieceWidget::addPiece);
+    connect(removeButton, &QPushButton::clicked, this, &ChessPieceWidget::removePiece);
+    connect(this, &ChessPieceWidget::pieceSelected, this, &ChessPieceWidget::addPieceToBoard);
+}
 
+void ChessPieceWidget::addPiece()
+{
+    emit pieceSelected(listWidget->currentItem()->text());
+}
+void ChessPieceWidget::removePiece()
+{
 
-    void ChessPieceWidget::addPiece()
-    {
-
-    }
-
-    void ChessPieceWidget::removePiece()
-    {
-    }
-};
+}

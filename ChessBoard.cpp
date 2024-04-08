@@ -15,6 +15,9 @@ ChessBoard::ChessBoard(QWidget* parent) : QWidget(parent), squareSize(50)
         }
     }
 
+    // Set a fixed size for the widget
+    setFixedSize(8 * squareSize, 8 * squareSize);
+
     // Load piece images
     QDir dir(":/images/Chess/");
     QStringList filters;

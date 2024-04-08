@@ -4,6 +4,7 @@
 //École Polytechnique de Montréal
 //Projet Final de INF1015
 
+#pragma once
 #include <QWidget>
 #include <QVBoxLayout>
 #include <QListWidget>
@@ -14,10 +15,14 @@ class ChessPieceWidget : public QWidget
     Q_OBJECT
 
 public:
-    ChessPieceWidget(QWidget* parent = nullptr);
+    explicit ChessPieceWidget(QWidget* parent = nullptr);
 
 public slots:
     void addPiece();
-
     void removePiece();
+signals:
+    void pieceSelected(const QString& pieceName, int row, int col);
+private:
+    QListWidget* listWidget;
+
 };
