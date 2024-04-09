@@ -40,21 +40,11 @@ ChessPieceWidget::ChessPieceWidget(QWidget* parent)
 void ChessPieceWidget::addPiece()
 {
     QString selectedPiece = listWidget->currentItem()->text();
-    emit addPieceToBoard(selectedPiece);
+    emit addPieceSignal(selectedPiece);
 }
 
 void ChessPieceWidget::removePiece()
 {
     QString selectedPiece = listWidget->currentItem()->text();
     emit removePieceFromBoard(selectedPiece);
-}
-
-
-QString ChessPieceWidget::getSelectedPieceName() const
-{
-    // Get the currently selected item from the list widget
-    QListWidgetItem* selectedItem = listWidget->currentItem();
-
-    // Return the text of the selected item as the selected piece name
-    return  selectedItem->text();
 }

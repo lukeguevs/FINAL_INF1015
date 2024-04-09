@@ -1,56 +1,45 @@
-﻿  moc Chess.h
-  moc ChessBoard.hpp
-  moc ChessPieceWidget.hpp
+﻿  moc ChessPieceWidget.hpp
   Chess.cpp
   ChessBoard.cpp
   ChessPieceWidget.cpp
-  Piece.cpp
   main.cpp
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'ChessBoard.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'ChessBoard.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'ChessPieceWidget.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'ChessPieceWidget.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessBoard.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessPieceWidget.cpp')
-  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
   (compiling source file 'main.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
   (compiling source file 'main.cpp')
   
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess.cpp')
+  
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessPieceWidget.cpp')
+  (compiling source file 'Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
   (compiling source file 'main.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
   (compiling source file 'main.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Chess.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
   (compiling source file 'Chess.cpp')
@@ -65,62 +54,56 @@ C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning
   (compiling source file 'Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'main.cpp')
+  (compiling source file 'ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'main.cpp')
+  (compiling source file 'ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessBoard.cpp')
+  (compiling source file 'main.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessBoard.cpp')
+  (compiling source file 'main.cpp')
   
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(84,29): error C2039: 'key': is not a member of 'QPixmap'
-  C:\Qt\6.7.0\msvc2019_64\include\QtGui\qscreen.h(26,7):
-  see declaration of 'QPixmap'
+  moc_Chess.cpp
+  moc_ChessBoard.cpp
+  moc_ChessPieceWidget.cpp
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'x64/Debug/moc/moc_ChessPieceWidget.cpp')
   
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(84,46): error C2039: 'key': is not a member of 'QPixmap'
-  C:\Qt\6.7.0\msvc2019_64\include\QtGui\qscreen.h(26,7):
-  see declaration of 'QPixmap'
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'x64/Debug/moc/moc_ChessPieceWidget.cpp')
   
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(85,29): error C2039: 'key': is not a member of 'QPixmap'
-  C:\Qt\6.7.0\msvc2019_64\include\QtGui\qscreen.h(26,7):
-  see declaration of 'QPixmap'
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'x64/Debug/moc/moc_ChessBoard.cpp')
   
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(85,47): error C2039: 'key': is not a member of 'QPixmap'
-  C:\Qt\6.7.0\msvc2019_64\include\QtGui\qscreen.h(26,7):
-  see declaration of 'QPixmap'
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'x64/Debug/moc/moc_ChessBoard.cpp')
   
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(85,86): error C2039: 'key': is not a member of 'QPixmap'
-  C:\Qt\6.7.0\msvc2019_64\include\QtGui\qscreen.h(26,7):
-  see declaration of 'QPixmap'
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'x64/Debug/moc/moc_Chess.cpp')
   
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(85,104): error C2039: 'key': is not a member of 'QPixmap'
-  C:\Qt\6.7.0\msvc2019_64\include\QtGui\qscreen.h(26,7):
-  see declaration of 'QPixmap'
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'x64/Debug/moc/moc_Chess.cpp')
   
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(85,144): error C2039: 'key': is not a member of 'QPixmap'
-  C:\Qt\6.7.0\msvc2019_64\include\QtGui\qscreen.h(26,7):
-  see declaration of 'QPixmap'
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'x64/Debug/moc/moc_Chess.cpp')
   
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(85,162): error C2039: 'key': is not a member of 'QPixmap'
-  C:\Qt\6.7.0\msvc2019_64\include\QtGui\qscreen.h(26,7):
-  see declaration of 'QPixmap'
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'x64/Debug/moc/moc_Chess.cpp')
   
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(87,63): error C2039: 'value': is not a member of 'QPixmap'
-  C:\Qt\6.7.0\msvc2019_64\include\QtGui\qscreen.h(26,7):
-  see declaration of 'QPixmap'
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'x64/Debug/moc/moc_Chess.cpp')
   
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(87,20): error C2661: 'QPainter::drawPixmap': no overloaded function takes 1 arguments
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(87,20):
-  while trying to match the argument list '(T)'
-          with
-          [
-              T=QRect
-          ]
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'x64/Debug/moc/moc_Chess.cpp')
   
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(93,22): error C2084: function 'void board::ChessBoard::setPieceImage(const QString &,const QPixmap &)' already has a body
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(44,22):
-  see previous definition of 'setPieceImage'
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'x64/Debug/moc/moc_ChessBoard.cpp')
   
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'x64/Debug/moc/moc_ChessBoard.cpp')
+  
+  Chess.vcxproj -> C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\Chess.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

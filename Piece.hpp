@@ -9,6 +9,7 @@
 #include <QObject>
 #include <QWidget>
 #include <QPixmap>
+#include <QDir>
 
 namespace chess {
 
@@ -26,6 +27,7 @@ namespace chess {
         virtual QString getName() const = 0;
 
     protected:
+        QMap<QString, QPixmap> pieceImages;
         Type type;
         Color color;
     };

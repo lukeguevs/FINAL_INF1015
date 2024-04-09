@@ -16,13 +16,11 @@ class ChessPieceWidget : public QWidget
 
 public:
     explicit ChessPieceWidget(QWidget* parent = nullptr);
-    QString getSelectedPieceName() const;
-
 public slots:
     void addPiece();
     void removePiece();
 signals:
-    void addPieceToBoard(const QString& pieceName);
+    void addPieceSignal(const QString& pieceName);
     void removePieceFromBoard(const QString& pieceName);
 private:
     QListWidget* listWidget;

@@ -4,6 +4,7 @@
 //École Polytechnique de Montréal
 //Projet Final de INF1015
 
+#pragma once
 #include <QWidget>
 #include <QVector>
 #include <QMap>
@@ -19,24 +20,25 @@ namespace board {
     {
         Q_OBJECT
     public:
-        explicit ChessBoard(QWidget* parent = nullptr);
+        ChessBoard(QWidget* parent);
 
         void setSquareSize(int size);
-        void setPieceImage(const QString& pieceName, const QPixmap& image);
+        void addPiece(const QString& pieceName);
 
     protected:
         void paintEvent(QPaintEvent* event) override;
         void mousePressEvent(QMouseEvent* event) override;
 
+    public slots:
+        void addPieceSlot(const QString& pieceName);
+
     private:
         int squareSize;
         QVector<QRect> squares;
         QMap<QString, QPixmap> pieceImages;
-        ChessPieceWidget* pieceWidget;
+        ChessPieceWidget* chessPieceWidget;
 
         void drawChessboard(QPainter* painter);
-        void drawPieces(QPainter* painter);
-        void addPiece();
     };
 
 }
