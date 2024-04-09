@@ -1,20 +1,24 @@
-﻿  ChessPieceWidget.cpp
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+﻿  Chess.cpp
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessPieceWidget.cpp')
+  (compiling source file 'Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessPieceWidget.cpp')
+  (compiling source file 'Chess.cpp')
   
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.cpp(38,78): error C2039: 'addPieceToBoard': is not a member of 'ChessPieceWidget'
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(13,7):
-  see declaration of 'ChessPieceWidget'
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess.cpp')
   
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.cpp(38,78): error C2065: 'addPieceToBoard': undeclared identifier
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.cpp(43,10): error C2660: 'ChessPieceWidget::pieceSelected': function does not take 1 arguments
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(24,10):
-  see declaration of 'ChessPieceWidget::pieceSelected'
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.cpp(43,10):
-  while trying to match the argument list '(QString)'
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess.cpp')
   
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess.cpp')
+  
+  Chess.vcxproj -> C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\Chess.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

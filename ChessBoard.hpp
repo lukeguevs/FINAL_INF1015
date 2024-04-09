@@ -12,25 +12,28 @@
 #include <QMouseEvent>
 #include <QDir>
 
-class ChessBoard : public QWidget
-{
-    Q_OBJECT
-public:
-    explicit ChessBoard(QWidget* parent = nullptr);
+namespace board {
 
-    void setSquareSize(int size);
-    void setPieceImage(const QString& pieceName, const QPixmap& image);
+    class ChessBoard : public QWidget
+    {
+        Q_OBJECT
+    public:
+        explicit ChessBoard(QWidget* parent = nullptr);
 
-protected:
-    void paintEvent(QPaintEvent* event) override;
-    void mousePressEvent(QMouseEvent* event) override;
+        void setSquareSize(int size);
+        void setPieceImage(const QString& pieceName, const QPixmap& image);
 
-private:
-    int squareSize;
-    QVector<QRect> squares;
-    QMap<QString, QPixmap> pieceImages;
+    protected:
+        void paintEvent(QPaintEvent* event) override;
+        void mousePressEvent(QMouseEvent* event) override;
 
-    void drawChessboard(QPainter* painter);
-    void drawPieces(QPainter* painter);
-};
+    private:
+        int squareSize;
+        QVector<QRect> squares;
+        QMap<QString, QPixmap> pieceImages;
 
+        void drawChessboard(QPainter* painter);
+        void drawPieces(QPainter* painter);
+    };
+
+}

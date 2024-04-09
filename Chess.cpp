@@ -31,7 +31,6 @@ Chess::Chess(QWidget* parent) : QMainWindow(parent)
 
 void Chess::paintEvent(QPaintEvent* event)
 {
-    QMainWindow::paintEvent(event); // Call base class paintEvent
-    // Optionally, you can handle additional painting in the Chess class
-    // For example, drawing player information, game status, etc.
+    QMainWindow::paintEvent(event); 
+
 }

@@ -10,20 +10,24 @@
 #include <QWidget>
 #include <QPixmap>
 
-class Piece
-{
-public:
-    enum class Type { Pawn, Rook, Knight, Bishop, Queen, King };
-    enum class Color { White, Black };
+namespace chess {
 
-    Piece(Type type, Color color);
-    virtual ~Piece();
+    class Piece
+    {
+    public:
+        enum class Type { Pawn, Rook, Knight, Bishop, Queen, King };
+        enum class Color { White, Black };
 
-    Type getType() const;
-    Color getColor() const;
-    virtual QString getName() const = 0;
+        Piece(Type type, Color color);
+        virtual ~Piece();
 
-protected:
-    Type type;
-    Color color;
-};
+        Type getType() const;
+        Color getColor() const;
+        virtual QString getName() const = 0;
+
+    protected:
+        Type type;
+        Color color;
+    };
+
+}

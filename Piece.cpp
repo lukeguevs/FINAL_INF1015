@@ -9,12 +9,13 @@
 
 #include "Piece.hpp"
 
+namespace chess {
 
-Piece::Type Piece::getType() const{
-	return type;
+	Piece::Type Piece::getType() const {
+		return type;
+	}
+
+	Piece::Color Piece::getColor() const {
+		return color;
+	}
 }
-
-Piece::Color Piece::getColor() const {
-	return color;
-}
-

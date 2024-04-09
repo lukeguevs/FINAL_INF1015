@@ -35,12 +35,11 @@ ChessPieceWidget::ChessPieceWidget(QWidget* parent)
 
     connect(addButton, &QPushButton::clicked, this, &ChessPieceWidget::addPiece);
     connect(removeButton, &QPushButton::clicked, this, &ChessPieceWidget::removePiece);
-    connect(this, &ChessPieceWidget::pieceSelected, this, &ChessPieceWidget::addPieceToBoard);
 }
 
 void ChessPieceWidget::addPiece()
 {
-    emit pieceSelected(listWidget->currentItem()->text());
+
 }
 void ChessPieceWidget::removePiece()
 {
