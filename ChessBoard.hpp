@@ -37,6 +37,7 @@ namespace board {
         QVector<QRect> squares;
         QMap<QString, QPixmap> pieceImages;
         ChessPieceWidget* chessPieceWidget;
+        QPushButton* buttons[8][8];
 
         void drawChessboard(QPainter* painter);
     };

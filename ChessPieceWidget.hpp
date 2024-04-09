@@ -16,6 +16,7 @@ class ChessPieceWidget : public QWidget
 
 public:
     explicit ChessPieceWidget(QWidget* parent = nullptr);
+    ~ChessPieceWidget();
 public slots:
     void addPiece();
     void removePiece();

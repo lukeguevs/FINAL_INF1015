@@ -18,16 +18,21 @@ Chess::Chess(QWidget* parent) : QMainWindow(parent)
     setCentralWidget(chessboard); // Set the chessboard as the central widget of the main window
 
     // Create a ChessPieceWidget
-    ChessPieceWidget* piecesWidget = new ChessPieceWidget(this);
+    chessPieceWidget = new ChessPieceWidget(this);
 
     // Add the pieces widget to the main window
     QWidget* container = new QWidget(this);
     QHBoxLayout* layout = new QHBoxLayout(container);
     layout->addWidget(chessboard);
-    layout->addWidget(piecesWidget);
+    layout->addWidget(chessPieceWidget);
     layout->setContentsMargins(0, 0, 0, 0); // Remove any margins around the layout
     container->setLayout(layout); // Set the layout on the container
     setCentralWidget(container);
+}
+
+Chess::~Chess() {
+    delete chessboard;
+    delete chessPieceWidget;
 }
 
 void Chess::paintEvent(QPaintEvent* event)

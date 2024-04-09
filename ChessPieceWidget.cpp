@@ -37,6 +37,10 @@ ChessPieceWidget::ChessPieceWidget(QWidget* parent)
     connect(removeButton, &QPushButton::clicked, this, &ChessPieceWidget::removePiece);
 }
 
+ChessPieceWidget::~ChessPieceWidget() {
+    delete listWidget;
+};
+
 void ChessPieceWidget::addPiece()
 {
     QString selectedPiece = listWidget->currentItem()->text();
