@@ -10,6 +10,7 @@
 #include "ChessPieceWidget.hpp"
 #include "Chess.h"
 
+using namespace board;
 
 Chess::Chess(QWidget* parent) : QMainWindow(parent)
 {

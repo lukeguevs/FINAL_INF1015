@@ -33,16 +33,16 @@ QT_WARNING_DISABLE_GCC("-Wuseless-cast")
 namespace {
 
 #ifdef QT_MOC_HAS_STRINGDATA
-struct qt_meta_stringdata_CLASSChessBoardENDCLASS_t {};
-constexpr auto qt_meta_stringdata_CLASSChessBoardENDCLASS = QtMocHelpers::stringData(
-    "ChessBoard"
+struct qt_meta_stringdata_CLASSboardSCOPEChessBoardENDCLASS_t {};
+constexpr auto qt_meta_stringdata_CLASSboardSCOPEChessBoardENDCLASS = QtMocHelpers::stringData(
+    "board::ChessBoard"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
 #endif // !QT_MOC_HAS_STRINGDATA
 } // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_CLASSChessBoardENDCLASS[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSboardSCOPEChessBoardENDCLASS[] = {
 
  // content:
       12,       // revision
@@ -58,20 +58,20 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSChessBoardENDCLASS[] = {
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject ChessBoard::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject board::ChessBoard::staticMetaObject = { {
     QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
-    qt_meta_stringdata_CLASSChessBoardENDCLASS.offsetsAndSizes,
-    qt_meta_data_CLASSChessBoardENDCLASS,
+    qt_meta_stringdata_CLASSboardSCOPEChessBoardENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSboardSCOPEChessBoardENDCLASS,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSChessBoardENDCLASS_t,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSboardSCOPEChessBoardENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<ChessBoard, std::true_type>
     >,
     nullptr
 } };
 
-void ChessBoard::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void board::ChessBoard::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     (void)_o;
     (void)_id;
@@ -79,20 +79,20 @@ void ChessBoard::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     (void)_a;
 }
 
-const QMetaObject *ChessBoard::metaObject() const
+const QMetaObject *board::ChessBoard::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *ChessBoard::qt_metacast(const char *_clname)
+void *board::ChessBoard::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_CLASSChessBoardENDCLASS.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSboardSCOPEChessBoardENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QWidget::qt_metacast(_clname);
 }
 
-int ChessBoard::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int board::ChessBoard::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
     return _id;

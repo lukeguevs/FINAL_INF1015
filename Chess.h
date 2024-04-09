@@ -8,6 +8,8 @@
 #include "ChessBoard.hpp"
 #include "ChessPieceWidget.hpp"
 
+using namespace board;
+
 class Chess : public QMainWindow
 {
     Q_OBJECT

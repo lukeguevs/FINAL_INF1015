@@ -32,6 +32,8 @@ namespace board {
             QPixmap pieceImage(":/images/Chess/" + file);
             pieceImages[pieceName] = pieceImage;
         }
+
+        connect(pieceWidget, &ChessPieceWidget::addPiece, this, &ChessBoard::addPiece);
     }
 
     void ChessBoard::setSquareSize(int size)
@@ -49,6 +51,7 @@ namespace board {
         Q_UNUSED(event);
         QPainter painter(this);
         drawChessboard(&painter);
+        drawPieces(&painter);
     }
 
     void ChessBoard::mousePressEvent(QMouseEvent* event)
@@ -75,9 +78,28 @@ namespace board {
         }
     }
 
-    void ChessBoard::drawPieces(QPainter* painter)
+    void ChessBoard::addPiece()
     {
+        // Get the selected piece name from the ChessPieceWidget
+        QString selectedPieceName = pieceWidget->getSelectedPieceName();
 
+        // Get the mouse position on the board
+        QPoint mousePos = mapFromGlobal(QCursor::pos());
+
+        // Calculate the row and column of the square where the piece should be added
+        int row = mousePos.y() / squareSize;
+        int col = mousePos.x() / squareSize;
+
+        // Add the piece to the board
+        if (row >= 0 && row < 8 && col >= 0 && col < 8 && !pieceImages.contains(selectedPieceName)) {
+            pieceImages[selectedPieceName] = QPixmap();
+            update();
+        }
+    }
+
+    void ChessBoard::setPieceImage(const QString& pieceName, const QPixmap& image)
+    {
+        pieceImages[pieceName] = image;
     }
 
 }

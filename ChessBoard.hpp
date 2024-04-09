@@ -11,6 +11,7 @@
 #include <QPainter>
 #include <QMouseEvent>
 #include <QDir>
+#include "ChessPieceWidget.hpp"
 
 namespace board {
 
@@ -31,9 +32,11 @@ namespace board {
         int squareSize;
         QVector<QRect> squares;
         QMap<QString, QPixmap> pieceImages;
+        ChessPieceWidget* pieceWidget;
 
         void drawChessboard(QPainter* painter);
         void drawPieces(QPainter* painter);
+        void addPiece();
     };
 
 }
