@@ -89,9 +89,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="gtest-all.cc" />
+    <ClCompile Include="verification_allocation.cpp" />
     <QtRcc Include="Chess.qrc" />
     <QtUic Include="Chess.ui" />
     <QtMoc Include="Chess.h" />
+    <ClCompile Include="bibliotheque_cours.cpp" />
     <ClCompile Include="Chess.cpp" />
     <ClCompile Include="ChessBoard.cpp" />
     <ClCompile Include="Piece.cpp" />

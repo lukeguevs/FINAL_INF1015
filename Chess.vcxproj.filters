@@ -21,6 +21,9 @@
       <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
       <Extensions>ts</Extensions>
     </Filter>
+    <Filter Include="Biblio_cours">
+      <UniqueIdentifier>{54033259-86ea-4e47-a08a-ee2c410c301e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="Chess.qrc">
@@ -48,6 +51,15 @@
     </ClCompile>
     <ClCompile Include="ChessPieceWidget.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bibliotheque_cours.cpp">
+      <Filter>Biblio_cours</Filter>
+    </ClCompile>
+    <ClCompile Include="verification_allocation.cpp">
+      <Filter>Biblio_cours</Filter>
+    </ClCompile>
+    <ClCompile Include="gtest-all.cc">
+      <Filter>Biblio_cours</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
