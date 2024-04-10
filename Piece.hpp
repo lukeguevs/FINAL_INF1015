@@ -16,17 +16,17 @@ namespace chess {
     class Piece
     {
     public:
-        enum class Type { Pawn, Rook, Knight, Bishop, Queen, King };
-        enum class Color { White, Black };
+        enum class Type { PAWN, ROOK, KING, QUEEN, KNIGHT, BISHOP };
+        enum class Color { WHITE, BLACK };
 
         Piece(Type type, Color color);
-        virtual ~Piece();
-
+        void setPieceImage(const QPixmap& image);
         Type getType() const;
         Color getColor() const;
         virtual QString getName() const = 0;
 
     protected:
+        QPixmap pieceImage;
         QMap<QString, QPixmap> pieceImages;
         Type type;
         Color color;

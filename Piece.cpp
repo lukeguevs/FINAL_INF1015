@@ -24,7 +24,12 @@ namespace chess {
             QPixmap pieceImage(":/images/Chess/" + file);
             pieceImages[pieceName] = pieceImage;
         }
+
 	}
+
+   void Piece::setPieceImage(const QPixmap& image) {
+        pieceImage = image;
+    }
 
 	Piece::Type Piece::getType() const {
 		return type;

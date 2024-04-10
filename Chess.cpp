@@ -31,8 +31,8 @@ Chess::Chess(QWidget* parent) : QMainWindow(parent)
 }
 
 Chess::~Chess() {
-    delete chessboard;
-    delete chessPieceWidget;
+   delete chessboard;
+  delete chessPieceWidget;
 }
 
 void Chess::paintEvent(QPaintEvent* event)

@@ -89,12 +89,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="gtest-all.cc" />
-    <ClCompile Include="verification_allocation.cpp" />
     <QtRcc Include="Chess.qrc" />
     <QtUic Include="Chess.ui" />
     <QtMoc Include="Chess.h" />
-    <ClCompile Include="bibliotheque_cours.cpp" />
     <ClCompile Include="Chess.cpp" />
     <ClCompile Include="ChessBoard.cpp" />
     <ClCompile Include="Piece.cpp" />
@@ -115,10 +112,10 @@
     <Image Include="Chess\Rook-White.png" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Rook.hpp" />
     <QtMoc Include="ChessBoard.hpp" />
     <ClInclude Include="Piece.hpp" />
     <QtMoc Include="ChessPieceWidget.hpp" />
-    <ClInclude Include="Images\Rook.h" />
     <ClInclude Include="Rook.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

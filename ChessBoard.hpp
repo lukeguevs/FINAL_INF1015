@@ -21,6 +21,7 @@ namespace board {
         Q_OBJECT
     public:
         ChessBoard(QWidget* parent);
+        ~ChessBoard();
 
         void setSquareSize(int size);
         void addPiece(const QString& pieceName);

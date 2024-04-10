@@ -87,8 +87,13 @@ namespace board {
         }
 
     }
+
     ChessBoard::~ChessBoard() {
-        delete buttons;
+        for (int row = 0; row < 8; ++row) {
+            for (int col = 0; col < 8; ++col) {
+                delete buttons[row][col];
+            }
+        }
     }
 
     void ChessBoard::addPieceSlot(const QString& pieceName)
