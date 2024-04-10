@@ -25,6 +25,12 @@ namespace board {
 
         void setSquareSize(int size);
         void addPiece(const QString& pieceName);
+        int squareSize;
+        QVector<QRect> squares;
+        QMap<QString, QPixmap> pieceImages;
+        ChessPieceWidget* chessPieceWidget;
+        QPushButton* buttons[8][8];
+
 
     protected:
         void paintEvent(QPaintEvent* event) override;
@@ -32,14 +38,6 @@ namespace board {
 
     public slots:
         void addPieceSlot(const QString& pieceName);
-
-    private:
-        int squareSize;
-        QVector<QRect> squares;
-        QMap<QString, QPixmap> pieceImages;
-        ChessPieceWidget* chessPieceWidget;
-        QPushButton* buttons[8][8];
-
         void drawChessboard(QPainter* painter);
     };
 

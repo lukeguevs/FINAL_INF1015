@@ -26,7 +26,7 @@ namespace board {
         // Set a fixed size for the widget
         setFixedSize(8 * squareSize, 8 * squareSize);
 
-       }
+    }
 
     void ChessBoard::setSquareSize(int size)
     {
@@ -39,12 +39,6 @@ namespace board {
         Q_UNUSED(event);
         QPainter painter(this);
         drawChessboard(&painter);
-    }
-
-    void ChessBoard::mousePressEvent(QMouseEvent* event)
-    {
-        // Handle mouse click event (e.g., piece selection)
-        // You can add your logic here
     }
 
     void ChessBoard::drawChessboard(QPainter* painter)
@@ -63,29 +57,6 @@ namespace board {
                 painter->drawRect(squares[row * 8 + col]);
             }
         }
-    }
-
-    void ChessBoard::addPiece(const QString& selectedPieceName)
-    {
-
-        // Get the mouse position on the board
-        QPoint mousePos = mapFromGlobal(QCursor::pos());
-
-        // Calculate the row and column of the square where the piece should be added
-        int row = mousePos.y() / squareSize;
-        int col = mousePos.x() / squareSize;
-
-        // Add the piece to the board
-        if (row >= 0 && row < 8 && col >= 0 && col < 8) {
-
-            // Draw the piece on the board
-            QPainter painter(this);
-            painter.drawPixmap(squares[row * 8 + col], pieceImages[selectedPieceName]);
-
-            // Update the board display
-            update();
-        }
-
     }
 
     ChessBoard::~ChessBoard() {

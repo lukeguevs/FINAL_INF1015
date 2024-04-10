@@ -11,5 +11,5 @@ using namespace chess;
 class Rook : public Piece {
 
 	Rook(Color color);
-
+	~Rook();
 };

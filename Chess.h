@@ -16,6 +16,7 @@ class Chess : public QMainWindow
 public:
     explicit Chess(QWidget* parent = nullptr);
     ~Chess();
+    void addPiece(const QString& pieceName, int row, int col);
 
 protected:
     void paintEvent(QPaintEvent* event) override;
