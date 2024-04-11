@@ -13,8 +13,10 @@
 
 namespace chess {
 
-    class Piece
+    class Piece : public QObject
     {
+        Q_OBJECT
+        Q_PROPERTY(QString symbol MEMBER symbol)
     public:
         enum class Type { PAWN, ROOK, KING, QUEEN, KNIGHT, BISHOP };
         enum class Color { WHITE, BLACK };

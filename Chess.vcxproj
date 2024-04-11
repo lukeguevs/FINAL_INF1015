@@ -124,7 +124,7 @@
     <ClInclude Include="Queen.hpp" />
     <ClInclude Include="Rook.hpp" />
     <QtMoc Include="ChessBoard.hpp" />
-    <ClInclude Include="Piece.hpp" />
+    <QtMoc Include="Piece.hpp" />
     <QtMoc Include="ChessPieceWidget.hpp" />
     <ClInclude Include="Rook.cpp" />
   </ItemGroup>
