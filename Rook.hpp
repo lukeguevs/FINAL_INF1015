@@ -12,5 +12,6 @@ class Rook : public Piece {
 public:
 Rook(Color color);
 ~Rook();
+QString getSymbol() const override;
 
 };

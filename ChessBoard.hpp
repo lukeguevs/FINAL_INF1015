@@ -14,6 +14,13 @@
 #include <QDir>
 #include "ChessPieceWidget.hpp"
 #include "Piece.cpp"
+#include "Rook.hpp"
+#include "King.hpp"
+#include "Queen.hpp"
+#include "Pawn.hpp"
+#include "Bishop.hpp"
+#include "Knight.hpp"
+
 
 using 
 
@@ -32,6 +39,7 @@ namespace board {
         QVector<QRect> squares;
         ChessPieceWidget* chessPieceWidget;
         QPushButton* buttons[8][8];
+        void addPieces();
 
 
     protected:

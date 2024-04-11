@@ -7,3 +7,6 @@ Rook::Rook(Color color) : Piece(Type::ROOK, color, (color == Color::WHITE) ? "\u
 
 Rook::~Rook() {}
 
+QString Rook::getSymbol() const override {
+    return symbol;
+}

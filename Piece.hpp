@@ -19,17 +19,29 @@ namespace chess {
         enum class Type { PAWN, ROOK, KING, QUEEN, KNIGHT, BISHOP };
         enum class Color { WHITE, BLACK };
 
-        Piece(Type type, Color color);
-        void setPieceImage(const QPixmap& image);
+        Piece(Type type, Color color, const QString& unicode);
+
         Type getType() const;
         Color getColor() const;
-        virtual QString getName() const = 0;
+        virtual QString getSymbol() const = 0;
 
     protected:
-        QPixmap pieceImage;
-        QMap<QString, QPixmap> pieceImages;
         Type type;
         Color color;
+        QString symbol; // Unicode character
+
+        /*White King : \u2654
+        White Queen : \u2655
+        White Rook : \u2656
+        White Bishop : \u2657
+        White Knight : \u2658
+        White Pawn : \u2659
+        Black King : \u265A
+        Black Queen : \u265B
+        Black Rook : \u265C
+        Black Bishop : \u265D
+        Black Knight : \u265E
+        Black Pawn : \u265F*/
     };
 
 }
