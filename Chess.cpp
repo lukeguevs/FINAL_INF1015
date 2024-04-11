@@ -38,5 +38,4 @@ Chess::~Chess() {
 void Chess::paintEvent(QPaintEvent* event)
 {
     QMainWindow::paintEvent(event); 
-
 }

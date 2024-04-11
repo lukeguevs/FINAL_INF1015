@@ -9,7 +9,8 @@
 using namespace chess;
 
 class Rook : public Piece {
+public:
+Rook(Color color);
+~Rook();
 
-	Rook(Color color);
-	~Rook();
 };

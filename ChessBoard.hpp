@@ -13,6 +13,9 @@
 #include <QMouseEvent>
 #include <QDir>
 #include "ChessPieceWidget.hpp"
+#include "Piece.cpp"
+
+using 
 
 namespace board {
 
@@ -27,7 +30,6 @@ namespace board {
         void addPiece(const QString& pieceName);
         int squareSize;
         QVector<QRect> squares;
-        QMap<QString, QPixmap> pieceImages;
         ChessPieceWidget* chessPieceWidget;
         QPushButton* buttons[8][8];
 
@@ -37,7 +39,7 @@ namespace board {
         void mousePressEvent(QMouseEvent* event) override;
 
     public slots:
-        void addPieceSlot(const QString& pieceName);
+        void addPieceSlot(const chess::Piece& pieceName);
         void drawChessboard(QPainter* painter);
     };
 

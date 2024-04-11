@@ -6,6 +6,7 @@
 
 #include "ChessBoard.hpp"
 using namespace std;
+using namespace chess;
 
 namespace board {
 
@@ -67,7 +68,7 @@ namespace board {
         }
     }
 
-    void ChessBoard::addPieceSlot(const QString& pieceName)
+    void ChessBoard::addPieceSlot(const Piece& pieceName)
     {
         addPiece(pieceName);
     }

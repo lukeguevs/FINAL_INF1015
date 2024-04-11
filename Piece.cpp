@@ -8,34 +8,43 @@
 #pragma once
 
 #include "Piece.hpp"
-
 namespace chess {
 
-	Piece::Piece(Type type, Color color) {
-        // Load piece images
-        QDir dir(":/images/Chess/");
-        QStringList filters;
-        filters << "*.png";
-        dir.setNameFilters(filters);
-        QStringList pieceFiles = dir.entryList();
+    class Piece {
+    public:
+        enum class Type { King, Queen, Rook, Bishop, Knight, Pawn };
+        enum class Color { White, Black };
 
-        for (const QString& file : pieceFiles) {
-            QString pieceName = file.left(file.lastIndexOf("."));
-            QPixmap pieceImage(":/images/Chess/" + file);
-            pieceImages[pieceName] = pieceImage;
+        Piece(Type type, Color color, const QString& unicode)
+            : type(type), color(color), pieceUnicode(unicode) {}
+
+        QString getPieceUnicode() const {
+            return pieceUnicode;
         }
 
-	}
+        Type getType() const {
+            return type;
+        }
 
-   void Piece::setPieceImage(const QPixmap& image) {
-        pieceImage = image;
-    }
+        Color getColor() const {
+            return color;
+        }
 
-	Piece::Type Piece::getType() const {
-		return type;
-	}
+    private:
+        Type type;
+        Color color;
+        QString pieceUnicode;
 
-	Piece::Color Piece::getColor() const {
-		return color;
-	}
-}
+        /*White King : \u2654
+        White Queen : \u2655
+        White Rook : \u2656
+        White Bishop : \u2657
+        White Knight : \u2658
+        White Pawn : \u2659
+        Black King : \u265A
+        Black Queen : \u265B
+        Black Rook : \u265C
+        Black Bishop : \u265D
+        Black Knight : \u265E
+        Black Pawn : \u265F*/
+    };
