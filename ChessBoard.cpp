@@ -116,7 +116,7 @@ namespace board {
         Piece::Type pieceType = piece.getType();
         
         std::vector<std::pair<int, int>> movesPos = piece.getPossibleMoves(posX,posY,pieceType);
-        
+    
         for (const auto& moves : movesPos) {
             if (buttons[moves.first][moves.second] == nullptr) {
                 
