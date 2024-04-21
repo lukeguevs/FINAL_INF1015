@@ -33,68 +33,105 @@ QT_WARNING_DISABLE_GCC("-Wuseless-cast")
 namespace {
 
 #ifdef QT_MOC_HAS_STRINGDATA
-struct qt_meta_stringdata_CLASSChessPieceENDCLASS_t {};
-constexpr auto qt_meta_stringdata_CLASSChessPieceENDCLASS = QtMocHelpers::stringData(
-    "ChessPiece"
+struct qt_meta_stringdata_CLASSchessSCOPEPieceENDCLASS_t {};
+constexpr auto qt_meta_stringdata_CLASSchessSCOPEPieceENDCLASS = QtMocHelpers::stringData(
+    "chess::Piece",
+    "symbol"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
 #endif // !QT_MOC_HAS_STRINGDATA
 } // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_CLASSChessPieceENDCLASS[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSchessSCOPEPieceENDCLASS[] = {
 
  // content:
       12,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
-       0,    0, // properties
+       1,   14, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
 
+ // properties: name, type, flags
+       1, QMetaType::QString, 0x00015003, uint(-1), 0,
+
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject ChessPiece::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject chess::Piece::staticMetaObject = { {
     QMetaObject::SuperData::link<QObject::staticMetaObject>(),
-    qt_meta_stringdata_CLASSChessPieceENDCLASS.offsetsAndSizes,
-    qt_meta_data_CLASSChessPieceENDCLASS,
+    qt_meta_stringdata_CLASSchessSCOPEPieceENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSchessSCOPEPieceENDCLASS,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSChessPieceENDCLASS_t,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSchessSCOPEPieceENDCLASS_t,
+        // property 'symbol'
+        QtPrivate::TypeAndForceComplete<QString, std::true_type>,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<ChessPiece, std::true_type>
+        QtPrivate::TypeAndForceComplete<Piece, std::true_type>
     >,
     nullptr
 } };
 
-void ChessPiece::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void chess::Piece::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
+if (_c == QMetaObject::ReadProperty) {
+        auto *_t = static_cast<Piece *>(_o);
+        (void)_t;
+        void *_v = _a[0];
+        switch (_id) {
+        case 0: *reinterpret_cast< QString*>(_v) = _t->symbol; break;
+        default: break;
+        }
+    } else if (_c == QMetaObject::WriteProperty) {
+        auto *_t = static_cast<Piece *>(_o);
+        (void)_t;
+        void *_v = _a[0];
+        switch (_id) {
+        case 0:
+            if (_t->symbol != *reinterpret_cast< QString*>(_v)) {
+                _t->symbol = *reinterpret_cast< QString*>(_v);
+            }
+            break;
+        default: break;
+        }
+    } else if (_c == QMetaObject::ResetProperty) {
+    } else if (_c == QMetaObject::BindableProperty) {
+    }
     (void)_o;
     (void)_id;
     (void)_c;
     (void)_a;
 }
 
-const QMetaObject *ChessPiece::metaObject() const
+const QMetaObject *chess::Piece::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *ChessPiece::qt_metacast(const char *_clname)
+void *chess::Piece::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_CLASSChessPieceENDCLASS.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSchessSCOPEPieceENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QObject::qt_metacast(_clname);
 }
 
-int ChessPiece::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int chess::Piece::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
+            || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
+            || _c == QMetaObject::RegisterPropertyMetaType) {
+        qt_static_metacall(this, _c, _id, _a);
+        _id -= 1;
+    }
     return _id;
 }
 QT_WARNING_POP
