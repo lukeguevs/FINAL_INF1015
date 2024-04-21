@@ -89,6 +89,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="RAII.cpp" />
     <ClCompile Include="Tour.cpp" />
     <QtRcc Include="Chess.qrc" />
     <QtUic Include="Chess.ui" />
@@ -117,6 +118,7 @@
   <ItemGroup>
     <ClInclude Include="King.hpp" />
     <ClInclude Include="Knight.hpp" />
+    <ClInclude Include="RAII.hpp" />
     <ClInclude Include="Tour.hpp" />
     <QtMoc Include="ChessBoard.hpp" />
     <ClInclude Include="Piece.hpp" />

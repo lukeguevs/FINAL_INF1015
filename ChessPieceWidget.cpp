@@ -12,29 +12,15 @@ ChessPieceWidget::ChessPieceWidget(QWidget* parent)
 {
     QVBoxLayout* layout = new QVBoxLayout(this);
     listWidget = new QListWidget(this);
-    QPushButton* addButton = new QPushButton("Add Piece", this);
-    QPushButton* removeButton = new QPushButton("Remove Piece", this);
+    QPushButton* putNewBoard = new QPushButton("Installer jeu", this);
+    QPushButton* removeBoard = new QPushButton("Enlever jeu", this);
+    QPushButton* undo = new QPushButton("Undo", this);
+    layout->addWidget(undo);
+    layout->addWidget(putNewBoard);
+    layout->addWidget(removeBoard);
 
-
-    listWidget->addItem("Pawn-Black");
-    listWidget->addItem("Pawn-White");
-    listWidget->addItem("Rook-Black");
-    listWidget->addItem("Rook-White");
-    listWidget->addItem("Knight-Black");
-    listWidget->addItem("Knight-White");
-    listWidget->addItem("Bishop-Black");
-    listWidget->addItem("Bishop-White");
-    listWidget->addItem("Queen-Black");
-    listWidget->addItem("Queen-White");
-    listWidget->addItem("King-Black");
-    listWidget->addItem("King-White");
-
-    layout->addWidget(listWidget);
-    layout->addWidget(addButton);
-    layout->addWidget(removeButton);
-
-    connect(addButton, &QPushButton::clicked, this, &ChessPieceWidget::addPiece);
-    connect(removeButton, &QPushButton::clicked, this, &ChessPieceWidget::removePiece);
+    connect(putNewBoard, &QPushButton::clicked, this, &ChessPieceWidget::addPiece);
+    connect(removeBoard, &QPushButton::clicked, this, &ChessPieceWidget::removePiece);
 }
 
 ChessPieceWidget::~ChessPieceWidget() {
