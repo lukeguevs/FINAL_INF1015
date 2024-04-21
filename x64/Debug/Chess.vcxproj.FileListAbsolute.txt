@@ -1,2 +1,3 @@
 C:\Users\lucas\Downloads\Chess\x64\Debug\Chess.exe
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\Chess.exe
+C:\Users\wilfa\source\repos\FINAL_INF1015\x64\Debug\Chess.exe

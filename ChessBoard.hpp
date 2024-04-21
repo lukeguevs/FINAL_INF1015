@@ -11,8 +11,13 @@
 #include <QRect>
 #include <QPainter>
 #include <QMouseEvent>
+#include <QPixmap>
 #include <QDir>
 #include "ChessPieceWidget.hpp"
+#include "King.hpp"
+#include "Piece.hpp"
+#include "Tour.hpp"
+#include "Knight.hpp"
 
 namespace board {
 
@@ -34,11 +39,12 @@ namespace board {
 
     protected:
         void paintEvent(QPaintEvent* event) override;
-        void mousePressEvent(QMouseEvent* event) override;
+        //void mousePressEvent(QMouseEvent* event) override;
 
     public slots:
-        void addPieceSlot(const QString& pieceName);
+        void addPieceSlot(const Piece& piece, int posX, int posY);
         void drawChessboard(QPainter* painter);
+        void displayPossibleMoves(const Piece& piece, int posX, int posY);
     };
 
 }

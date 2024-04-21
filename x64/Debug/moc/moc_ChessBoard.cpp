@@ -38,10 +38,14 @@ constexpr auto qt_meta_stringdata_CLASSboardSCOPEChessBoardENDCLASS = QtMocHelpe
     "board::ChessBoard",
     "addPieceSlot",
     "",
-    "pieceName",
+    "Piece",
+    "piece",
+    "posX",
+    "posY",
     "drawChessboard",
     "QPainter*",
-    "painter"
+    "painter",
+    "displayPossibleMoves"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -54,7 +58,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSboardSCOPEChessBoardENDCLASS[] =
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -62,12 +66,14 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSboardSCOPEChessBoardENDCLASS[] =
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   26,    2, 0x0a,    1 /* Public */,
-       4,    1,   29,    2, 0x0a,    3 /* Public */,
+       1,    3,   32,    2, 0x0a,    1 /* Public */,
+       7,    1,   39,    2, 0x0a,    5 /* Public */,
+      10,    3,   42,    2, 0x0a,    7 /* Public */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, 0x80000000 | 5,    6,
+    QMetaType::Void, 0x80000000 | 3, QMetaType::Int, QMetaType::Int,    4,    5,    6,
+    QMetaType::Void, 0x80000000 | 8,    9,
+    QMetaType::Void, 0x80000000 | 3, QMetaType::Int, QMetaType::Int,    4,    5,    6,
 
        0        // eod
 };
@@ -83,10 +89,17 @@ Q_CONSTINIT const QMetaObject board::ChessBoard::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<ChessBoard, std::true_type>,
         // method 'addPieceSlot'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const Piece &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'drawChessboard'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QPainter *, std::false_type>
+        QtPrivate::TypeAndForceComplete<QPainter *, std::false_type>,
+        // method 'displayPossibleMoves'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const Piece &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>
     >,
     nullptr
 } };
@@ -97,8 +110,9 @@ void board::ChessBoard::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         auto *_t = static_cast<ChessBoard *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->addPieceSlot((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 0: _t->addPieceSlot((*reinterpret_cast< std::add_pointer_t<Piece>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
         case 1: _t->drawChessboard((*reinterpret_cast< std::add_pointer_t<QPainter*>>(_a[1]))); break;
+        case 2: _t->displayPossibleMoves((*reinterpret_cast< std::add_pointer_t<Piece>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
         default: ;
         }
     }
@@ -123,13 +137,13 @@ int board::ChessBoard::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }

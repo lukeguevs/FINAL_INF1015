@@ -49,6 +49,15 @@
     <ClCompile Include="ChessPieceWidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="King.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Knight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Chess\Bishop-Black.png">
@@ -86,13 +95,16 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Rook.cpp">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="Piece.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Rook.hpp">
+    <ClInclude Include="King.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Knight.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tour.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

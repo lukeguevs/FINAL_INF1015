@@ -72,7 +72,7 @@
       <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -89,11 +89,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Tour.cpp" />
     <QtRcc Include="Chess.qrc" />
     <QtUic Include="Chess.ui" />
     <QtMoc Include="Chess.h" />
     <ClCompile Include="Chess.cpp" />
     <ClCompile Include="ChessBoard.cpp" />
+    <ClCompile Include="King.cpp" />
+    <ClCompile Include="Knight.cpp" />
     <ClCompile Include="Piece.cpp" />
     <ClCompile Include="ChessPieceWidget.cpp" />
     <ClCompile Include="main.cpp" />
@@ -112,11 +115,12 @@
     <Image Include="Chess\Rook-White.png" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Rook.hpp" />
+    <ClInclude Include="King.hpp" />
+    <ClInclude Include="Knight.hpp" />
+    <ClInclude Include="Tour.hpp" />
     <QtMoc Include="ChessBoard.hpp" />
     <ClInclude Include="Piece.hpp" />
     <QtMoc Include="ChessPieceWidget.hpp" />
-    <ClInclude Include="Rook.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

@@ -10,6 +10,8 @@
 #include <QWidget>
 #include <QPixmap>
 #include <QDir>
+#include <vector>
+
 
 namespace chess {
 
@@ -20,16 +22,24 @@ namespace chess {
         enum class Color { WHITE, BLACK };
 
         Piece(Type type, Color color);
-        void setPieceImage(const QPixmap& image);
         Type getType() const;
         Color getColor() const;
-        virtual QString getName() const = 0;
-
+        char32_t getUnicode() const;
+        int getPositionY() const;
+        int getPositionX() const;
+        void setPosition(int newPositionX,int newPositionY);
+        void setColor(Color newColor);
+        void setType(Type newType);
+        void setUnicode(char32_t newUnicode);
+        void setPossibleMoves(std::vector<std::pair<int, int>> newPossibleMoves);
+        std::vector<std::pair<int, int>> getPossibleMoves(int positionY, int positionX,Type type) const;
     protected:
-        QPixmap pieceImage;
-        QMap<QString, QPixmap> pieceImages;
         Type type;
         Color color;
+        char32_t unicode;
+        int posX;
+        int posY;
+        std::vector<std::pair<int, int>> possibleMoves;
     };
 
 }

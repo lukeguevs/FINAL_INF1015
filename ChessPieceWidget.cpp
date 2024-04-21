@@ -4,7 +4,7 @@
 //École Polytechnique de Montréal
 //Projet Final de INF1015
 
-
+#include <Qpixmap>
 #include "ChessPieceWidget.hpp"
 
 ChessPieceWidget::ChessPieceWidget(QWidget* parent)

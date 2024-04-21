@@ -1,3 +1,1 @@
-﻿ChessBoard.obj : error LNK2019: symbole externe non résolu "public: void __cdecl board::ChessBoard::addPiece(class QString const &)" (?addPiece@ChessBoard@board@@QEAAXAEBVQString@@@Z) référencé dans la fonction "public: void __cdecl board::ChessBoard::addPieceSlot(class QString const &)" (?addPieceSlot@ChessBoard@board@@QEAAXAEBVQString@@@Z)
-ChessBoard.obj : error LNK2001: symbole externe non résolu "protected: virtual void __cdecl board::ChessBoard::mousePressEvent(class QMouseEvent *)" (?mousePressEvent@ChessBoard@board@@MEAAXPEAVQMouseEvent@@@Z)
-C:\Users\wilfa\source\repos\FINAL_INF1015\x64\Debug\Chess.exe : fatal error LNK1120: 2 externes non résolus
+﻿  Chess.vcxproj -> C:\Users\wilfa\source\repos\FINAL_INF1015\x64\Debug\Chess.exe

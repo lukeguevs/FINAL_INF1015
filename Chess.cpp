@@ -9,6 +9,8 @@
 #include <QHBoxLayout>
 #include "ChessPieceWidget.hpp"
 #include "Chess.h"
+#include <QPixmap>
+
 
 using namespace board;
 
@@ -23,12 +25,19 @@ Chess::Chess(QWidget* parent) : QMainWindow(parent)
     // Add the pieces widget to the main window
     QWidget* container = new QWidget(this);
     QHBoxLayout* layout = new QHBoxLayout(container);
+    
     layout->addWidget(chessboard);
     layout->addWidget(chessPieceWidget);
     layout->setContentsMargins(0, 0, 0, 0); // Remove any margins around the layout
     container->setLayout(layout); // Set the layout on the container
     setCentralWidget(container);
+    
 }
+
+ 
+    
+
+
 
 Chess::~Chess() {
    delete chessboard;
