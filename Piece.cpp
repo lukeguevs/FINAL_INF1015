@@ -48,8 +48,8 @@ namespace chess {
 	int Piece::getPositionY() const {
 		return posY;
 	}
-	std::vector<std::pair<int, int>> Piece::getPossibleMoves(int positionX, int positionY, Type pieceType) const {
-		std::vector<std::pair<int, int>>  moves;
+	vector<pair<int, int>> Piece::getPossibleMoves(int positionX, int positionY, Type pieceType) const {
+		vector<pair<int, int>> moves;
 
 		if (pieceType == Type::KING) {
 			moves = { { positionY + 1,positionX + 0 },

@@ -10,7 +10,8 @@
 using namespace chess;
 
 class King : public Piece {
-
+private:
+    static int compteurRoi;
 public:
     King(Color color);
     ~King();

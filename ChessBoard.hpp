@@ -18,6 +18,7 @@
 #include "Piece.hpp"
 #include "Tour.hpp"
 #include "Knight.hpp"
+#include "RAII.hpp"
 
 namespace board {
 
@@ -27,6 +28,7 @@ namespace board {
     public:
         ChessBoard(QWidget* parent);
         ~ChessBoard();
+        ChessBoard();
 
         void setSquareSize(int size);
         void addPiece(const QString& pieceName);
@@ -35,9 +37,10 @@ namespace board {
         QMap<QString, QPixmap> pieceImages;
         ChessPieceWidget* chessPieceWidget;
         QPushButton* buttons[8][8];
-
+        
 
     protected:
+        
         void paintEvent(QPaintEvent* event) override;
         //void mousePressEvent(QMouseEvent* event) override;
 

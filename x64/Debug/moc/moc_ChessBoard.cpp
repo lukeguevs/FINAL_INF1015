@@ -38,7 +38,7 @@ constexpr auto qt_meta_stringdata_CLASSboardSCOPEChessBoardENDCLASS = QtMocHelpe
     "board::ChessBoard",
     "addPieceSlot",
     "",
-    "Piece&",
+    "Piece",
     "piece",
     "posX",
     "posY",
@@ -89,7 +89,7 @@ Q_CONSTINIT const QMetaObject board::ChessBoard::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<ChessBoard, std::true_type>,
         // method 'addPieceSlot'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<Piece &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const Piece &, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'drawChessboard'
@@ -97,7 +97,7 @@ Q_CONSTINIT const QMetaObject board::ChessBoard::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<QPainter *, std::false_type>,
         // method 'displayPossibleMoves'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<Piece &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const Piece &, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>
     >,
@@ -110,9 +110,9 @@ void board::ChessBoard::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         auto *_t = static_cast<ChessBoard *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->addPieceSlot((*reinterpret_cast< std::add_pointer_t<Piece&>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
+        case 0: _t->addPieceSlot((*reinterpret_cast< std::add_pointer_t<Piece>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
         case 1: _t->drawChessboard((*reinterpret_cast< std::add_pointer_t<QPainter*>>(_a[1]))); break;
-        case 2: _t->displayPossibleMoves((*reinterpret_cast< std::add_pointer_t<Piece&>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
+        case 2: _t->displayPossibleMoves((*reinterpret_cast< std::add_pointer_t<Piece>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
         default: ;
         }
     }
