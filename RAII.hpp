@@ -10,12 +10,13 @@
 #include <vector>
 #include <iostream>
 #include <QObject>
+#include <QWidget>
 using namespace chess;
 
 
-class RAII : public QObject{
+class RAII : public QWidget{
 public:
-	RAII(chess::Piece& piece, int posX, int posY, QPushButton* buttons[8][8]);
+	RAII(const chess::Piece& piece, int posX, int posY, QPushButton* buttons[8][8]);
 
 	~RAII();
 protected:

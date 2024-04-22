@@ -7,10 +7,10 @@
 
 #include "RAII.hpp"
 
-RAII::RAII(Piece& piece, int posX, int posY, QPushButton* buttons[8][8]) {
+RAII::RAII(const Piece& piece, int posX, int posY, QPushButton* buttons[8][8]) {
 
 	char32_t image = piece.getUnicode();
-	QString imagePiece = QString::fromUcs4(&image, 1);
+	const QString imagePiece = QString::fromUcs4(&image, 1);
 	Piece::Color color = piece.getColor();
 
 

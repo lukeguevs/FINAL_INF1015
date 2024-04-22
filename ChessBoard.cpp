@@ -33,10 +33,6 @@ namespace board {
 		Knight blackKnight(Piece::Color::BLACK);
 		Tour whiteRook(Piece::Color::WHITE);
 
-		/*addPieceSlot(blackKnight,2,1);
-		addPieceSlot(roiBlanc,4,6);
-		addPieceSlot(whiteRook,6,5);*/
-
 	}
 
 	void ChessBoard::setSquareSize(int size)
