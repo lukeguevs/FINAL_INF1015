@@ -6,7 +6,11 @@
 
 
 King::King(Color color) : Piece(Type::KING, color) {
-    // Charge l'image de la tour selon sa couleur 
+    if (compteurRoi >= 2) {
+        throw std::runtime_error("There is already two kings");
+    }
+    compteurRoi++;
+
     if (color == Color::WHITE) {
         setUnicode(U'\u2654');
     }

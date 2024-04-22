@@ -13,8 +13,8 @@
 #include <QWidget>
 using namespace chess;
 
-
-class RAII : public QWidget{
+/*
+class RAII : public QObject{
 public:
 	RAII(const chess::Piece& piece, int posX, int posY, QPushButton* buttons[8][8]);
 
@@ -22,3 +22,4 @@ public:
 protected:
 	int squareSize = 50;
 };
+*/

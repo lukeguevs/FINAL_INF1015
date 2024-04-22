@@ -6,9 +6,10 @@
 
 #include "ChessBoard.hpp"
 using namespace std;
+int King::compteurRoi = 0;
 
 namespace board {
-
+	
 	ChessBoard::ChessBoard() {};
 
 	ChessBoard::ChessBoard(QWidget* parent) : QWidget(parent), squareSize(50)
@@ -29,9 +30,24 @@ namespace board {
 		}
 		
 		setFixedSize(8 * squareSize, 8 * squareSize);
-		King roiBlanc(Piece::Color::WHITE);
 		Knight blackKnight(Piece::Color::BLACK);
 		Tour whiteRook(Piece::Color::WHITE);
+		
+		try{
+		King roi1(Piece::Color::WHITE);
+		addPieceSlot(roi1, 4, 6);
+		King roi2(Piece::Color::WHITE);
+		addPieceSlot(roi2, 5, 6);
+		King roi3(Piece::Color::WHITE);
+		addPieceSlot(roi3, 6, 6);
+		}
+		catch (const std::runtime_error& e) {
+			std::cerr << "Erreur : " << e.what() << std::endl;
+			
+		}
+		
+		addPieceSlot(blackKnight,2,1);
+		addPieceSlot(whiteRook,6,5);
 
 	}
 
@@ -105,31 +121,34 @@ namespace board {
 			});
 	}
 
-	void ChessBoard::displayPossibleMoves(const Piece& piece, int posX, int posY) {
-		Piece::Type pieceType = piece.getType();
-		
-		vector<pair<int, int>> movesPos = piece.getPossibleMoves(posX,posY,pieceType);
-		
-		for (const auto& moves : movesPos) {
-			if (buttons[moves.first][moves.second] == nullptr) {
-				
-				buttons[moves.first][moves.second] = new QPushButton("*", this);
-				buttons[moves.first][moves.second]->setGeometry((moves.second) * squareSize, (moves.first) * squareSize, squareSize, squareSize);
-				buttons[moves.first][moves.second]->setFlat(true);
-				buttons[moves.first][moves.second]->setVisible(true);
-				QFont nouvellePolice = buttons[moves.first][moves.second]->font();
-				nouvellePolice.setPointSize(40);
-				buttons[moves.first][moves.second]->setFont(nouvellePolice);
-				buttons[moves.first][moves.second]->setStyleSheet("color: green;");
-				
-				connect(buttons[moves.first][moves.second], &QPushButton::clicked, this, [=]() {
+	
+    void ChessBoard::displayPossibleMoves(const Piece& piece, int posX, int posY ) {
+        Piece::Type pieceType = piece.getType();
+        
+        std::vector<std::pair<int, int>> movesPos = piece.getPossibleMoves(posX,posY,pieceType);
+    
+        for (const auto& moves : movesPos) {
+            if (buttons[moves.first][moves.second] == nullptr) {
+                
+                buttons[moves.first][moves.second] = new QPushButton("*", this);
+                buttons[moves.first][moves.second]->setGeometry((moves.second) * squareSize, (moves.first) * squareSize, squareSize, squareSize);
+                buttons[moves.first][moves.second]->setFlat(true);
+                buttons[moves.first][moves.second]->setVisible(true);
+                QFont nouvellePolice = buttons[moves.first][moves.second]->font();
+                nouvellePolice.setPointSize(40);
+                buttons[moves.first][moves.second]->setFont(nouvellePolice);
+                buttons[moves.first][moves.second]->setStyleSheet("color: green;");
+                
+                connect(buttons[moves.first][moves.second], &QPushButton::clicked, this, [=]() {
 
-					for (const auto& moves2 : movesPos) {
-						
-							buttons[moves2.first][moves2.second]->setText("");
-							delete buttons[moves2.first][moves2.second];
-							buttons[moves2.first][moves2.second] = nullptr;
-					}
+                    for (const auto& moves2 : movesPos) {
+                        
+                            buttons[moves2.first][moves2.second]->setText("");
+                            delete buttons[moves2.first][moves2.second];
+                            buttons[moves2.first][moves2.second] = nullptr;
+                        
+                    }
+
 
 
 					buttons[posY][posX]->setText("");
