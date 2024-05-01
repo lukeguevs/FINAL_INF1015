@@ -21,7 +21,7 @@ namespace chess {
     public:
         enum class Type { PAWN, ROOK, KING, QUEEN, KNIGHT, BISHOP };
         enum class Color { WHITE, BLACK };
-
+        
         Piece(Type type, Color color);
         Type getType() const;
         Color getColor() const;

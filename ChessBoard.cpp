@@ -22,10 +22,10 @@ namespace board {
 				buttons[row][col]->setGeometry(col * squareSize, row * squareSize, squareSize, squareSize);
 				buttons[row][col]->setFlat(true);
 				buttons[row][col]->setVisible(true);
-
+				QFont nouvellePolice = buttons[row][col]->font();
+				nouvellePolice.setPointSize(30);
+				buttons[row][col]->setFont(nouvellePolice);
 			   
-				delete buttons[row][col];
-				buttons[row][col] = nullptr;
 			}
 		}
 		
@@ -36,10 +36,8 @@ namespace board {
 		try{
 		King roi1(Piece::Color::WHITE);
 		addPieceSlot(roi1, 4, 6);
-		King roi2(Piece::Color::WHITE);
-		addPieceSlot(roi2, 5, 6);
-		King roi3(Piece::Color::WHITE);
-		addPieceSlot(roi3, 6, 6);
+		
+		
 		}
 		catch (const std::runtime_error& e) {
 			std::cerr << "Erreur : " << e.what() << std::endl;
@@ -93,20 +91,13 @@ namespace board {
 
 	void ChessBoard::addPieceSlot(const Piece& piece, int posX, int posY)
 	{
-		
+		isDisplay_ = false; 
 		char32_t image = piece.getUnicode();
 		QString imagePiece = QString::fromUcs4(&image, 1);
 		Piece::Color color = piece.getColor();
 		
 		
-		buttons[posY][posX] = new QPushButton(imagePiece, this);
-		buttons[posY][posX]->setGeometry((posX) * squareSize, (posY) * squareSize, squareSize, squareSize);
-		buttons[posY][posX]->setFlat(true);
-		buttons[posY][posX]->setVisible(true);
-		QFont nouvellePolice = buttons[posY][posX]->font();
-		nouvellePolice.setPointSize(30);
-		buttons[posY][posX]->setFont(nouvellePolice);
-		
+		buttons[posY][posX]->setText(imagePiece);
 		
 		if (color == Piece::Color::BLACK) {
 			buttons[posY][posX]->setStyleSheet("color: black;");
@@ -114,71 +105,103 @@ namespace board {
 		else {
 			buttons[posY][posX]->setStyleSheet("color: white;");
 		}
-
 		connect(buttons[posY][posX], &QPushButton::clicked, this, [=]() {
-			
-			displayPossibleMoves(piece, posX, posY);
+			if ((!(isDisplay_)) && color == turnColor_) {
+					disconnect(buttons[posY][posX], &QPushButton::clicked, this, nullptr);
+				
+					displayPossibleMoves(piece, posX, posY);
+			}
 			});
 	}
 
 	
     void ChessBoard::displayPossibleMoves(const Piece& piece, int posX, int posY ) {
+		isDisplay_ = true;
         Piece::Type pieceType = piece.getType();
-        
+		Piece::Color color = piece.getColor();
+		
         std::vector<std::pair<int, int>> movesPos = piece.getPossibleMoves(posX,posY,pieceType);
-    
-        for (const auto& moves : movesPos) {
-            if (buttons[moves.first][moves.second] == nullptr) {
-                
-                buttons[moves.first][moves.second] = new QPushButton("*", this);
-                buttons[moves.first][moves.second]->setGeometry((moves.second) * squareSize, (moves.first) * squareSize, squareSize, squareSize);
-                buttons[moves.first][moves.second]->setFlat(true);
-                buttons[moves.first][moves.second]->setVisible(true);
-                QFont nouvellePolice = buttons[moves.first][moves.second]->font();
-                nouvellePolice.setPointSize(40);
-                buttons[moves.first][moves.second]->setFont(nouvellePolice);
-                buttons[moves.first][moves.second]->setStyleSheet("color: green;");
-                
-                connect(buttons[moves.first][moves.second], &QPushButton::clicked, this, [=]() {
+		QString texteBouton;
+		
+		
+			for (const auto& moves : movesPos) {
+				texteBouton = buttons[moves.first][moves.second]->text();
+				if (texteBouton == "") {
+					buttons[moves.first][moves.second]->setStyleSheet("color: green;");
+					buttons[moves.first][moves.second]->setText("*");
+					connect(buttons[moves.first][moves.second], &QPushButton::clicked, this, [=]() {
 
-                    for (const auto& moves2 : movesPos) {
-                        
-                            buttons[moves2.first][moves2.second]->setText("");
-                            delete buttons[moves2.first][moves2.second];
-                            buttons[moves2.first][moves2.second] = nullptr;
-                        
-                    }
+						for (const auto& moves2 : movesPos) {
+							QString texteBouton2 = buttons[moves2.first][moves2.second]->text();
+							if (texteBouton2 == "*") {
+								disconnect(buttons[moves2.first][moves2.second], &QPushButton::clicked, this, nullptr);
+								buttons[moves2.first][moves2.second]->setText("");
+							}
+						}
+						disconnect(buttons[posY][posX], &QPushButton::clicked, this, nullptr);
+						buttons[posY][posX]->setText("");
+						
+						if (turnColor_ == Piece::Color::WHITE) {
+							turnColor_ = Piece::Color::BLACK;
+						}
+						else {
+							turnColor_ = Piece::Color::WHITE;
+						}
+						addPieceSlot(piece, moves.second, moves.first);
 
-
-
-					buttons[posY][posX]->setText("");
-					delete buttons[posY][posX];
-					buttons[posY][posX] = nullptr;
-					addPieceSlot(piece, moves.second, moves.first);
-
-					});
-			}
-			else {
-				
-				disconnect(buttons[moves.first][moves.second], &QPushButton::clicked, this, nullptr);
-				connect(buttons[moves.first][moves.second], &QPushButton::clicked, this, [=]() {
+						});
+				}
+				else {
+					Piece::Color colorCase = getCaseColor(moves.first, moves.second);
 					
-					for (const auto& moves2 : movesPos) {
-						
-							buttons[moves2.first][moves2.second]->setText("");
-							delete buttons[moves2.first][moves2.second];
-							buttons[moves2.first][moves2.second] = nullptr;
-						
+					if (color != colorCase) {
+						connect(buttons[moves.first][moves.second], &QPushButton::clicked, this, [=]() {
+							disconnect(buttons[moves.first][moves.second], &QPushButton::clicked, this, nullptr);
+							for (const auto& moves2 : movesPos) {
+								QString texteBouton2 = buttons[moves2.first][moves2.second]->text();
+								if (texteBouton2 != "") {
+									disconnect(buttons[moves2.first][moves2.second], &QPushButton::clicked, this, nullptr);
+									buttons[moves2.first][moves2.second]->setText("");
+								}
+							}
+							buttons[posY][posX]->setText("");
+							if (turnColor_ == Piece::Color::WHITE) {
+								turnColor_ = Piece::Color::BLACK;
+							}
+							else {
+								turnColor_ = Piece::Color::WHITE;
+							}
+							disconnect(buttons[posY][posX], &QPushButton::clicked, this, nullptr);
+							addPieceSlot(piece, moves.second, moves.first);
+
+							});
 					}
-					
-					buttons[posY][posX]->setText("");
-					delete buttons[posY][posX];
-					buttons[posY][posX] = nullptr;
-					addPieceSlot(piece, moves.second, moves.first);
-
-					});
-			}
+				}
 			
+			connect(buttons[posY][posX], &QPushButton::clicked, this, [=]() {
+				disconnect(buttons[posY][posX], &QPushButton::clicked, this, nullptr);
+				for (const auto& moves : movesPos) {
+					QString texteBouton3 = buttons[moves.first][moves.second]->text();
+					if (texteBouton3 == "*") {
+						disconnect(buttons[moves.first][moves.second], &QPushButton::clicked, this, nullptr);
+						buttons[moves.first][moves.second]->setText("");
+					}
+				}
+				addPieceSlot(piece, posX, posY);
+				});
+			}
+		
+	}
+	Piece::Color ChessBoard::getCaseColor(int posX, int posY) {
+		QString pieceCase = buttons[posX][posY]->text();
+		std::vector<char32_t> listWhite = { U'\u2654',U'\u2658',U'\u2656' };
+		for (auto unicode : listWhite) {
+			QString colorPiece = QString::fromUcs4(&unicode, 1);
+			if (pieceCase == colorPiece) {
+				return Piece::Color::WHITE;
+			}
 		}
+		return Piece::Color::BLACK;
+
 	}
 }

@@ -37,13 +37,15 @@ namespace board {
         QMap<QString, QPixmap> pieceImages;
         ChessPieceWidget* chessPieceWidget;
         QPushButton* buttons[8][8];
+        Piece::Color getCaseColor(int posX, int posY);
         
-
     protected:
         
         void paintEvent(QPaintEvent* event) override;
         //void mousePressEvent(QMouseEvent* event) override;
-
+    private:
+        bool isDisplay_ = false;
+        Piece::Color turnColor_ = Piece::Color::WHITE;
     public slots:
         void addPieceSlot(const Piece& piece, int posX, int posY);
         void drawChessboard(QPainter* painter);

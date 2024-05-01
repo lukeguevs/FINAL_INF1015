@@ -1,1 +1,46 @@
-﻿  Chess.vcxproj -> C:\Users\wilfa\source\repos\FINAL_INF1015\x64\Debug\Chess.exe
+﻿  ChessBoard.cpp
+C:\Users\wilfa\source\repos\FINAL_INF1015\ChessBoard.cpp(1,1): warning C4828: Le fichier contient un caractère qui débute à l'offset 0x4a et qui est non conforme dans le jeu de caractères source actuel (page de codes 65001).
+C:\Users\wilfa\source\repos\FINAL_INF1015\ChessBoard.cpp(1,1): warning C4828: Le fichier contient un caractère qui débute à l'offset 0x66 et qui est non conforme dans le jeu de caractères source actuel (page de codes 65001).
+C:\Users\wilfa\source\repos\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: Le fichier contient un caractère qui débute à l'offset 0x4a et qui est non conforme dans le jeu de caractères source actuel (page de codes 65001).
+  (compiler le fichier source 'ChessBoard.cpp')
+  
+C:\Users\wilfa\source\repos\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: Le fichier contient un caractère qui débute à l'offset 0x66 et qui est non conforme dans le jeu de caractères source actuel (page de codes 65001).
+  (compiler le fichier source 'ChessBoard.cpp')
+  
+C:\Users\wilfa\source\repos\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: Le fichier contient un caractère qui débute à l'offset 0x4a et qui est non conforme dans le jeu de caractères source actuel (page de codes 65001).
+  (compiler le fichier source 'ChessBoard.cpp')
+  
+C:\Users\wilfa\source\repos\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: Le fichier contient un caractère qui débute à l'offset 0x66 et qui est non conforme dans le jeu de caractères source actuel (page de codes 65001).
+  (compiler le fichier source 'ChessBoard.cpp')
+  
+C:\Users\wilfa\source\repos\FINAL_INF1015\King.hpp(1,1): warning C4828: Le fichier contient un caractère qui débute à l'offset 0x4a et qui est non conforme dans le jeu de caractères source actuel (page de codes 65001).
+  (compiler le fichier source 'ChessBoard.cpp')
+  
+C:\Users\wilfa\source\repos\FINAL_INF1015\King.hpp(1,1): warning C4828: Le fichier contient un caractère qui débute à l'offset 0x66 et qui est non conforme dans le jeu de caractères source actuel (page de codes 65001).
+  (compiler le fichier source 'ChessBoard.cpp')
+  
+C:\Users\wilfa\source\repos\FINAL_INF1015\Piece.hpp(1,1): warning C4828: Le fichier contient un caractère qui débute à l'offset 0x4a et qui est non conforme dans le jeu de caractères source actuel (page de codes 65001).
+  (compiler le fichier source 'ChessBoard.cpp')
+  
+C:\Users\wilfa\source\repos\FINAL_INF1015\Piece.hpp(1,1): warning C4828: Le fichier contient un caractère qui débute à l'offset 0x66 et qui est non conforme dans le jeu de caractères source actuel (page de codes 65001).
+  (compiler le fichier source 'ChessBoard.cpp')
+  
+C:\Users\wilfa\source\repos\FINAL_INF1015\Tour.hpp(1,1): warning C4828: Le fichier contient un caractère qui débute à l'offset 0x4a et qui est non conforme dans le jeu de caractères source actuel (page de codes 65001).
+  (compiler le fichier source 'ChessBoard.cpp')
+  
+C:\Users\wilfa\source\repos\FINAL_INF1015\Tour.hpp(1,1): warning C4828: Le fichier contient un caractère qui débute à l'offset 0x66 et qui est non conforme dans le jeu de caractères source actuel (page de codes 65001).
+  (compiler le fichier source 'ChessBoard.cpp')
+  
+C:\Users\wilfa\source\repos\FINAL_INF1015\Knight.hpp(1,1): warning C4828: Le fichier contient un caractère qui débute à l'offset 0x4a et qui est non conforme dans le jeu de caractères source actuel (page de codes 65001).
+  (compiler le fichier source 'ChessBoard.cpp')
+  
+C:\Users\wilfa\source\repos\FINAL_INF1015\Knight.hpp(1,1): warning C4828: Le fichier contient un caractère qui débute à l'offset 0x66 et qui est non conforme dans le jeu de caractères source actuel (page de codes 65001).
+  (compiler le fichier source 'ChessBoard.cpp')
+  
+C:\Users\wilfa\source\repos\FINAL_INF1015\RAII.hpp(1,1): warning C4828: Le fichier contient un caractère qui débute à l'offset 0x4a et qui est non conforme dans le jeu de caractères source actuel (page de codes 65001).
+  (compiler le fichier source 'ChessBoard.cpp')
+  
+C:\Users\wilfa\source\repos\FINAL_INF1015\RAII.hpp(1,1): warning C4828: Le fichier contient un caractère qui débute à l'offset 0x66 et qui est non conforme dans le jeu de caractères source actuel (page de codes 65001).
+  (compiler le fichier source 'ChessBoard.cpp')
+  
+  Chess.vcxproj -> C:\Users\wilfa\source\repos\FINAL_INF1015\x64\Debug\Chess.exe
