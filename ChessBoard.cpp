@@ -6,6 +6,7 @@
 
 #include "ChessBoard.hpp"
 using namespace std;
+
 int King::compteurRoi = 0;
 
 namespace board {
@@ -36,17 +37,12 @@ namespace board {
 		try{
 		King roi1(Piece::Color::WHITE);
 		addPieceSlot(roi1, 4, 6);
-		
-		
 		}
 		catch (const std::runtime_error& e) {
 			std::cerr << "Erreur : " << e.what() << std::endl;
-			
 		}
-		
 		addPieceSlot(blackKnight,2,1);
 		addPieceSlot(whiteRook,6,5);
-
 	}
 
 	void ChessBoard::setSquareSize(int size)
@@ -60,7 +56,6 @@ namespace board {
 		Q_UNUSED(event);
 		QPainter painter(this);
 		drawChessboard(&painter);
-  
 	}
 
 	void ChessBoard::drawChessboard(QPainter* painter)
@@ -89,14 +84,14 @@ namespace board {
 		}
 	}
 
-	void ChessBoard::addPieceSlot(const Piece& piece, int posX, int posY)
+	void ChessBoard::addPieceSlot(Piece& piece, int posX, int posY)
 	{
 		isDisplay_ = false; 
 		char32_t image = piece.getUnicode();
 		QString imagePiece = QString::fromUcs4(&image, 1);
 		Piece::Color color = piece.getColor();
-		
-		
+		piece.setPosition(posX, posY);
+
 		buttons[posY][posX]->setText(imagePiece);
 		
 		if (color == Piece::Color::BLACK) {
@@ -115,12 +110,12 @@ namespace board {
 	}
 
 	
-    void ChessBoard::displayPossibleMoves(const Piece& piece, int posX, int posY ) {
+    void ChessBoard::displayPossibleMoves(Piece& piece, int posX, int posY ) {
 		isDisplay_ = true;
         Piece::Type pieceType = piece.getType();
 		Piece::Color color = piece.getColor();
 		
-        std::vector<std::pair<int, int>> movesPos = piece.getPossibleMoves(posX,posY,pieceType);
+        vector<pair<int, int>> movesPos = piece.getPossibleMoves(posX,posY,pieceType);
 		QString texteBouton;
 		
 		
@@ -194,7 +189,7 @@ namespace board {
 	}
 	Piece::Color ChessBoard::getCaseColor(int posX, int posY) {
 		QString pieceCase = buttons[posX][posY]->text();
-		std::vector<char32_t> listWhite = { U'\u2654',U'\u2658',U'\u2656' };
+		vector<char32_t> listWhite = { U'\u2654',U'\u2658',U'\u2656' }; //caractere unicode de nos trois pieces blanches
 		for (auto unicode : listWhite) {
 			QString colorPiece = QString::fromUcs4(&unicode, 1);
 			if (pieceCase == colorPiece) {
@@ -204,4 +199,7 @@ namespace board {
 		return Piece::Color::BLACK;
 
 	}
+
+	void ChessBoard::isCheck() {}
+	
 }

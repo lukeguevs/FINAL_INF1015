@@ -5,6 +5,7 @@
 //Projet Final de INF1015
 
 #pragma once
+#include <unordered_map>
 #include <QWidget>
 #include <QVector>
 #include <QMap>
@@ -31,25 +32,27 @@ namespace board {
         ChessBoard();
 
         void setSquareSize(int size);
-        void addPiece(const QString& pieceName);
         int squareSize;
         QVector<QRect> squares;
         QMap<QString, QPixmap> pieceImages;
         ChessPieceWidget* chessPieceWidget;
         QPushButton* buttons[8][8];
         Piece::Color getCaseColor(int posX, int posY);
+        void isCheck();
+        void findPieces();
         
     protected:
         
         void paintEvent(QPaintEvent* event) override;
         //void mousePressEvent(QMouseEvent* event) override;
     private:
+        vector<Piece> piecesBoard;
         bool isDisplay_ = false;
         Piece::Color turnColor_ = Piece::Color::WHITE;
     public slots:
-        void addPieceSlot(const Piece& piece, int posX, int posY);
+        void addPieceSlot(Piece& piece, int posX, int posY);
         void drawChessboard(QPainter* painter);
-        void displayPossibleMoves(const Piece& piece, int posX, int posY);
+        void displayPossibleMoves(Piece& piece, int posX, int posY);
     };
 
 }
