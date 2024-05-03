@@ -11,6 +11,7 @@
 
 namespace chess {
 
+	Piece::~Piece() {}
 	Piece::Piece(Type type, Color color) {
 		setColor(color);
 		setType(type);
@@ -18,20 +19,11 @@ namespace chess {
 	void Piece::setUnicode(char32_t newUnicode) {
 		unicode = newUnicode;
 	}
-	void Piece::setPosition(int newPositionX, int newPositionY) {
-		if ((newPositionX < 8) && (newPositionY < 8)) {
-			posX = newPositionX;
-			posY = newPositionY;
-		}
-	}
 	void Piece::setColor(Color newColor) {
 		color = newColor;
 	}
 	void Piece::setType(Type newType) {
 		type = newType;
-	}
-	void Piece::setPossibleMoves(std::vector<std::pair<int, int>> newPossibleMoves) {
-		possibleMoves = newPossibleMoves;
 	}
 	Piece::Type Piece::getType() const {
 		return type;
@@ -41,12 +33,6 @@ namespace chess {
 	}
 	Piece::Color Piece::getColor() const {
 		return color;
-	}
-	int Piece::getPositionX() const {
-		return posX;
-	}
-	int Piece::getPositionY() const {
-		return posY;
 	}
 	vector<pair<int, int>> Piece::getPossibleMoves(int positionX, int positionY, Type pieceType) const {
 		vector<pair<int, int>> moves;

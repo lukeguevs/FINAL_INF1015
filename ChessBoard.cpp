@@ -84,13 +84,12 @@ namespace board {
 		}
 	}
 
-	void ChessBoard::addPieceSlot(Piece& piece, int posX, int posY)
+	void ChessBoard::addPieceSlot(const Piece& piece, int posX, int posY)
 	{
 		isDisplay_ = false; 
 		char32_t image = piece.getUnicode();
 		QString imagePiece = QString::fromUcs4(&image, 1);
 		Piece::Color color = piece.getColor();
-		piece.setPosition(posX, posY);
 
 		buttons[posY][posX]->setText(imagePiece);
 		
@@ -104,13 +103,13 @@ namespace board {
 			if ((!(isDisplay_)) && color == turnColor_) {
 					disconnect(buttons[posY][posX], &QPushButton::clicked, this, nullptr);
 				
-					displayPossibleMoves(piece, posX, posY);
+					displayAndMove(piece, posX, posY);
 			}
 			});
 	}
 
 	
-    void ChessBoard::displayPossibleMoves(Piece& piece, int posX, int posY ) {
+    void ChessBoard::displayAndMove(const Piece& piece, int posX, int posY ) {
 		isDisplay_ = true;
         Piece::Type pieceType = piece.getType();
 		Piece::Color color = piece.getColor();
@@ -126,7 +125,7 @@ namespace board {
 					buttons[moves.first][moves.second]->setText("*");
 					connect(buttons[moves.first][moves.second], &QPushButton::clicked, this, [=]() {
 
-						for (const auto& moves2 : movesPos) {
+						for (auto moves2 : movesPos) {
 							QString texteBouton2 = buttons[moves2.first][moves2.second]->text();
 							if (texteBouton2 == "*") {
 								disconnect(buttons[moves2.first][moves2.second], &QPushButton::clicked, this, nullptr);
@@ -152,7 +151,7 @@ namespace board {
 					if (color != colorCase) {
 						connect(buttons[moves.first][moves.second], &QPushButton::clicked, this, [=]() {
 							disconnect(buttons[moves.first][moves.second], &QPushButton::clicked, this, nullptr);
-							for (const auto& moves2 : movesPos) {
+							for (auto moves2 : movesPos) {
 								QString texteBouton2 = buttons[moves2.first][moves2.second]->text();
 								if (texteBouton2 != "") {
 									disconnect(buttons[moves2.first][moves2.second], &QPushButton::clicked, this, nullptr);
@@ -175,7 +174,7 @@ namespace board {
 			
 			connect(buttons[posY][posX], &QPushButton::clicked, this, [=]() {
 				disconnect(buttons[posY][posX], &QPushButton::clicked, this, nullptr);
-				for (const auto& moves : movesPos) {
+				for (auto moves : movesPos) {
 					QString texteBouton3 = buttons[moves.first][moves.second]->text();
 					if (texteBouton3 == "*") {
 						disconnect(buttons[moves.first][moves.second], &QPushButton::clicked, this, nullptr);
@@ -199,7 +198,15 @@ namespace board {
 		return Piece::Color::BLACK;
 
 	}
+	void ChessBoard::findPieces() {
+		for (int col = 0; col < 8; ++col) {
+			for (int row = 0; row < 8; ++row) {
+				if (buttons[row][col]->text() != "") {
+					piecePositions.insert(make_pair(buttons[row][col]->text(), make_pair(row, col)));
+					}
+				}
+			}
+		}
+	}
 
-	void ChessBoard::isCheck() {}
 	
-}
