@@ -89,7 +89,7 @@ Q_CONSTINIT const QMetaObject ChessBoard::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<ChessBoard, std::true_type>,
         // method 'addPieceSlot'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const Piece &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<Piece, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'drawChessboard'
@@ -97,7 +97,7 @@ Q_CONSTINIT const QMetaObject ChessBoard::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<QPainter *, std::false_type>,
         // method 'displayAndMove'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const Piece &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<Piece, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>
     >,

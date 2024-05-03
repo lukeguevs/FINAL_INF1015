@@ -11,15 +11,13 @@
 #include <QPixmap>
 #include <QDir>
 #include <vector>
-#include "ChessBoard.hpp"
 using namespace std;
 
 class Piece
 {
 public:
     enum class Type {ROOK, KING, KNIGHT};
-    enum class Color { WHITE, BLACK };
-        
+    enum class Color { WHITE, BLACK };   
     Piece(Type type, Color color);
     Type getType() const;
     Color getColor() const;
@@ -27,11 +25,16 @@ public:
     void setColor(Color newColor);
     void setType(Type newType);
     void setUnicode(char32_t newUnicode);
-    vector<pair<int, int>> getPossibleMoves(ChessBoard* chessboard,int positionY, int positionX,Type type) const;
+    vector<pair<int, int>> getPossibleMoves() const;
+    void setPossibleMoves(int positionY, int positionX, Type type);
+    void setPossibleMoves(const vector<pair<int, int>>& possibleMoves);
+    void addPossibleMove(int posX, int posY);
+    void clearPossibleMoves();
     ~Piece();
 protected:
     Type type;
     Color color;
     char32_t unicode;
+    vector<pair<int, int>> possibleMoves;
 };
 

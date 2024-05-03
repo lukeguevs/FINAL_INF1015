@@ -12,7 +12,6 @@
 #include <QPixmap>
 
 
-using namespace board;
 
 Chess::Chess(QWidget* parent) : QMainWindow(parent)
 {

@@ -4,6 +4,7 @@
 //École Polytechnique de Montréal
 //Projet Final de INF1015
 
+constexpr int BOARD_SIZE = 8;
 #include "ChessBoard.hpp"
 using namespace std;
 
@@ -15,8 +16,8 @@ int King::compteurRoi = 0;
 	ChessBoard::ChessBoard(QWidget* parent) : QWidget(parent), squareSize(50)
 	{
 
-		for (int col = 0; col < 8; ++col) {
-			for (int row = 0; row < 8; ++row) {
+		for (int col = 0; col < BOARD_SIZE; ++col) {
+			for (int row = 0; row < BOARD_SIZE; ++row) {
 				squares.append(QRect(col * squareSize, row * squareSize, squareSize, squareSize));
 				buttons[row][col] = new QPushButton(this);
 				buttons[row][col]->setGeometry(col * squareSize, row * squareSize, squareSize, squareSize);
@@ -85,7 +86,7 @@ int King::compteurRoi = 0;
 		}
 	}
 
-	void ChessBoard::addPieceSlot(const Piece& piece, int posX, int posY)
+	void ChessBoard::addPieceSlot(Piece piece, int posX, int posY)
 	{
 		isDisplay_ = false;
 		char32_t image = piece.getUnicode();
@@ -110,12 +111,15 @@ int King::compteurRoi = 0;
 	}
 
 
-	void ChessBoard::displayAndMove(const Piece& piece, int posX, int posY) {
+	void ChessBoard::displayAndMove(Piece piece, int posX, int posY) {
 		isDisplay_ = true;
 		Piece::Type pieceType = piece.getType();
 		Piece::Color color = piece.getColor();
 
-		vector<pair<int, int>> movesPos = piece.getPossibleMoves(this, posX, posY, pieceType);
+		/*piece.setPossibleMoves(posX, posY, pieceType);*/
+		modifyPossibleMoves(piece, posX, posY);
+	
+		vector<pair<int, int>> movesPos = piece.getPossibleMoves();
 		QString texteBouton;
 
 		for (const auto& moves : movesPos) {
@@ -198,7 +202,7 @@ int King::compteurRoi = 0;
 
 	}
 	void ChessBoard::findPieces() {
-		for (int col = 0; col < 8; ++col) {
+		for (int col = 0; col < BOARD_SIZE ; ++col) {
 			for (int row = 0; row < 8; ++row) {
 				if (buttons[row][col]->text() != "") {
 					piecePositions.insert(make_pair(buttons[row][col]->text(), make_pair(row, col)));
@@ -207,46 +211,110 @@ int King::compteurRoi = 0;
 		}
 	}
 
-
-	bool ChessBoard::isPathBlocked(int startY, int startX, int endY, int endX) const {
-		// Check if it's a diagonal or straight move
-		if (startY != endY && startX != endX) {
-			// Diagonal moves are not allowed for Rooks (handled elsewhere)
-			return true;
-		}
-
-		// Get the direction of movement (up, down, left, or right)
-		int directionX = (endX - startX) / abs(endX - startX); // -1, 0, or 1
-		int directionY = (endY - startY) / abs(endY - startY); // -1, 0, or 1
-
-		// Loop through squares between the start and end positions (excluding start and end)
-		for (int y = startY + directionY;
-			(directionY == 1 && y < endY) || (directionY == -1 && y > endY) || y == endY;
-			y += directionY) {
-			for (int x = startX + directionX;
-				(directionX == 1 && x < endX) || (directionX == -1 && x > endX) || x == endX;
-				x += directionX) {
-				// Skip checking the starting square and the ending square
-				if (x == startX && y == startY) {
-					continue;
-				}
-
-				// Check if the square is occupied
-				if (isSquareOccupied(x, y)) {
-					return true; // Path is blocked
-				}
-			}
-		}
-
-		return false; // Path is not blocked
-	}
-
-
 	bool ChessBoard::isSquareOccupied(int x, int y) const {
-		
-		if (x < 0 || x >= 8 || y < 0 || y >= 8) {
-			return false; 
+		if (x < 0 || x >= BOARD_SIZE || y < 0 || y >= BOARD_SIZE) {
+			return false;
 		}
 
 		return piecePositions.find(buttons[y][x]->text()) != piecePositions.end();
 	}
+
+	void ChessBoard::modifyPossibleMoves(Piece& piece, int posX, int posY) {
+		piece.clearPossibleMoves();
+		Piece::Type pieceType = piece.getType();
+
+		if (pieceType == Piece::Type::ROOK || pieceType == Piece::Type::KING || pieceType == Piece::Type::KNIGHT) {
+			// Clear existing possibleMoves
+
+			// Modify possibleMoves based on the presence of other pieces
+			// Iterate over rows and columns to check for obstacles
+			// Modify possibleMoves accordingly
+
+			// For Rook
+			if (pieceType == Piece::Type::ROOK) {
+				// Modify possibleMoves for rook movement
+				// Check horizontally and vertically for obstacles
+				for (int x = posX + 1; x < BOARD_SIZE; ++x) {
+					if (isSquareOccupied(x, posY)) {
+						if (piece.getColor() != getCaseColor(x, posY)) {
+							piece.addPossibleMove(x, posY); // Include the square with opposing piece
+						}
+						break; // Stop adding moves in this direction
+					}
+					piece.addPossibleMove(x, posY);
+				}
+				for (int x = posX - 1; x >= 0; --x) {
+					if (isSquareOccupied(x, posY)) {
+						if (piece.getColor() != getCaseColor(x, posY)) {
+							piece.addPossibleMove(x, posY); // Include the square with opposing piece
+						}
+						break; // Stop adding moves in this direction
+					}
+					piece.addPossibleMove(x, posY);
+				}
+				for (int y = posY + 1; y < BOARD_SIZE; ++y) {
+					if (isSquareOccupied(posX, y)) {
+						if (piece.getColor() != getCaseColor(posX, y)) {
+							piece.addPossibleMove(posX, y); // Include the square with opposing piece
+						}
+						break; // Stop adding moves in this direction
+					}
+					piece.addPossibleMove(posX, y);
+				}
+				for (int y = posY - 1; y >= 0; --y) {
+					if (isSquareOccupied(posX, y)) {
+						if (piece.getColor() != getCaseColor(posX, y)) {
+							piece.addPossibleMove(posX, y); // Include the square with opposing piece
+						}
+						break; // Stop adding moves in this direction
+					}
+					piece.addPossibleMove(posX, y);
+				}
+			}
+
+			// For King
+			else if (pieceType == Piece::Type::KING) {
+				// Modify possibleMoves for king movement
+				// Check all adjacent squares for obstacles
+				for (int dx = -1; dx <= 1; ++dx) {
+					for (int dy = -1; dy <= 1; ++dy) {
+						int newX = posX + dx;
+						int newY = posY + dy;
+						if (newX >= 0 && newX < BOARD_SIZE && newY >= 0 && newY < BOARD_SIZE) {
+							if (!isSquareOccupied(newX, newY)) {
+								piece.addPossibleMove(newX, newY);
+							}
+							else if (piece.getColor() != getCaseColor(newX, newY)) {
+								piece.addPossibleMove(newX, newY);
+							}
+						}
+					}
+				}
+			}
+
+			// For Knight
+			else if (pieceType == Piece::Type::KNIGHT) {
+				// Modify possibleMoves for knight movement
+				// Knights can jump over other pieces, so no need to check for obstacles
+				int knightMoves[8][2] = {
+					{1, 2}, {1, -2}, {-1, 2}, {-1, -2},
+					{2, 1}, {2, -1}, {-2, 1}, {-2, -1}
+				};
+
+				for (const auto& move : knightMoves) {
+					int newX = posX + move[0];
+					int newY = posY + move[1];
+
+					if (newX >= 0 && newX < BOARD_SIZE && newY >= 0 && newY < BOARD_SIZE) {
+						if (!isSquareOccupied(newX, newY)) {
+							piece.addPossibleMove(newX, newY);
+						}
+						else if (piece.getColor() != getCaseColor(newX, newY)) {
+							piece.addPossibleMove(newX, newY);
+						}
+					}
+				}
+			}
+		}
+	}
+

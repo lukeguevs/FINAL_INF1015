@@ -38,7 +38,7 @@ public:
     ChessPieceWidget* chessPieceWidget;
     QPushButton* buttons[8][8];
     Piece::Color getCaseColor(int posX, int posY);
-    bool isPathBlocked(int startY, int startX, int endY, int endX) const;
+    void modifyPossibleMoves(Piece& piece, int posX, int posY);
     void isCheck();
     void findPieces();
     bool isSquareOccupied(int x, int y) const;
@@ -50,8 +50,7 @@ private:
     bool isDisplay_ = false;
     Piece::Color turnColor_ = Piece::Color::WHITE;
 public slots:
-    void addPieceSlot(const Piece& piece, int posX, int posY);
+    void addPieceSlot(Piece piece, int posX, int posY);
     void drawChessboard(QPainter* painter);
-    void displayAndMove(const Piece& piece, int posX, int posY);
+    void displayAndMove(Piece piece, int posX, int posY);
 };
-

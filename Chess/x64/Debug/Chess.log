@@ -1,46 +1,13 @@
-﻿  RAII.cpp
-  Tour.cpp
-  Chess.cpp
+﻿  Chess.cpp
   ChessBoard.cpp
   King.cpp
   Knight.cpp
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'RAII.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'RAII.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'RAII.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'RAII.cpp')
-  
   Piece.cpp
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Tour.cpp')
-  
+  RAII.cpp
+  Tour.cpp
   main.cpp
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
   (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
   (compiling source file 'King.cpp')
@@ -51,29 +18,16 @@ C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C482
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
   (compiling source file 'King.cpp')
   
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'ChessBoard.cpp')
+  
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
   (compiling source file 'ChessBoard.cpp')
   
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'main.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'main.cpp')
-  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
@@ -82,11 +36,51 @@ C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C482
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
   (compiling source file 'Piece.cpp')
   
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'RAII.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Tour.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Knight.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'RAII.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Tour.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Knight.cpp')
+  
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'RAII.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
   (compiling source file 'main.cpp')
   
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Knight.cpp')
+  
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'RAII.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
   (compiling source file 'main.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Knight.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Tour.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Tour.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
   (compiling source file 'Chess.cpp')
@@ -95,10 +89,10 @@ C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): w
   (compiling source file 'Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Tour.cpp')
+  (compiling source file 'main.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Tour.cpp')
+  (compiling source file 'main.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
   (compiling source file 'Chess.cpp')
@@ -118,635 +112,224 @@ C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): w
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
   (compiling source file 'ChessBoard.cpp')
   
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'RAII.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'RAII.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'main.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'main.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'RAII.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'RAII.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'RAII.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'RAII.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'RAII.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'RAII.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'RAII.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'RAII.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'ChessBoard.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'ChessBoard.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'ChessBoard.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'ChessBoard.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'ChessBoard.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'ChessBoard.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'ChessBoard.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'ChessBoard.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'ChessBoard.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'ChessBoard.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'main.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'main.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'main.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'main.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'main.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'main.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'main.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'main.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'main.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'main.cpp')
+  
+  moc_Chess.cpp
+  moc_ChessBoard.cpp
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess/x64/Debug/moc/moc_Chess.cpp')
+  
+C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Chess/x64/Debug/moc/moc_Chess.cpp')
+  
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Piece.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Piece.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'King.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'King.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Tour.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Tour.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Piece.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'King.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessBoard.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessBoard.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessBoard.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessBoard.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(30,45): error C2061: syntax error: identifier 'ChessBoard'
-  (compiling source file 'ChessBoard.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessBoard.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessBoard.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessBoard.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessBoard.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessBoard.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'ChessBoard.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(118,42): error C2660: 'Piece::getPossibleMoves': function does not take 4 arguments
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(30,28):
-  see declaration of 'Piece::getPossibleMoves'
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.cpp(118,42):
-  while trying to match the argument list '(ChessBoard *, int, int, Piece::Type)'
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'main.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'main.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_Chess.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Tour.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(10,21): error C2504: 'Piece': base class undefined
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(14,10): error C2061: syntax error: identifier 'Color'
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(9,21): error C2504: 'Piece': base class undefined
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(12,7): error C2061: syntax error: identifier 'Color'
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(10,23): error C2504: 'Piece': base class undefined
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(13,9): error C2061: syntax error: identifier 'Color'
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(40,5): error C2653: 'Piece': is not a class or namespace name
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(40,18): error C3646: 'getCaseColor': unknown override specifier
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(40,30): error C2059: syntax error: '('
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(40,50): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'RAII.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'RAII.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,5): error C2653: 'Piece': is not a class or namespace name
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,18): error C3646: 'turnColor_': unknown override specifier
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,29): error C2059: syntax error: '='
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,31): error C2653: 'Piece': is not a class or namespace name
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,50): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(53,34): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(53,34): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(55,36): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(55,36): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'Tour.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(9,12): error C2011: 'Tour': 'class' type redefinition
-  (compiling source file 'Tour.cpp')
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(9,7):
-  see declaration of 'Tour'
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(6,7): error C2027: use of undefined type 'Tour'
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(9,7):
-  see declaration of 'Tour'
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(6,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(6,12): error C2065: 'Color': undeclared identifier
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(6,18): error C2146: syntax error: missing ')' before identifier 'color'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(6,33): error C2653: 'Type': is not a class or namespace name
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(6,43): error C2143: syntax error: missing ')' before ','
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(6,39): error C2512: 'Piece': no appropriate default constructor available
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(17,7):
-  see declaration of 'Piece'
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(6,50): error C2059: syntax error: ')'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(8,5): error C2059: syntax error: 'if'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(8,18): error C2653: 'Color': is not a class or namespace name
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(8,32): error C2143: syntax error: missing ';' before '{'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(8,32): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(11,5): error C2059: syntax error: 'else'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(11,10): error C2143: syntax error: missing ';' before '{'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(11,10): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(14,1): error C2059: syntax error: '}'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(14,1): error C2143: syntax error: missing ';' before '}'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(16,8): error C2027: use of undefined type 'Tour'
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(9,7):
-  see declaration of 'Tour'
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(16,15): error C2143: syntax error: missing ';' before '{'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.cpp(16,15): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(10,21): error C2504: 'Piece': base class undefined
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(14,10): error C2061: syntax error: identifier 'Color'
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(9,21): error C2504: 'Piece': base class undefined
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(12,7): error C2061: syntax error: identifier 'Color'
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(10,23): error C2504: 'Piece': base class undefined
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(13,9): error C2061: syntax error: identifier 'Color'
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(40,5): error C2653: 'Piece': is not a class or namespace name
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(40,18): error C3646: 'getCaseColor': unknown override specifier
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(40,30): error C2059: syntax error: '('
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(40,50): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(10,21): error C2504: 'Piece': base class undefined
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(14,10): error C2061: syntax error: identifier 'Color'
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(9,21): error C2504: 'Piece': base class undefined
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(12,7): error C2061: syntax error: identifier 'Color'
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(10,23): error C2504: 'Piece': base class undefined
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(13,9): error C2061: syntax error: identifier 'Color'
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(40,5): error C2653: 'Piece': is not a class or namespace name
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(40,18): error C3646: 'getCaseColor': unknown override specifier
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(40,30): error C2059: syntax error: '('
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(40,50): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,5): error C2653: 'Piece': is not a class or namespace name
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,18): error C3646: 'turnColor_': unknown override specifier
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,29): error C2059: syntax error: '='
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,31): error C2653: 'Piece': is not a class or namespace name
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,50): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(53,34): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(53,34): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(55,36): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(55,36): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'Piece.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,5): error C2653: 'Piece': is not a class or namespace name
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,18): error C3646: 'turnColor_': unknown override specifier
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,29): error C2059: syntax error: '='
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,31): error C2653: 'Piece': is not a class or namespace name
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,50): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(53,34): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(53,34): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(55,36): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(55,36): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'King.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(10,12): error C2011: 'King': 'class' type redefinition
-  (compiling source file 'King.cpp')
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(10,7):
-  see declaration of 'King'
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(8,7): error C2027: use of undefined type 'King'
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(10,7):
-  see declaration of 'King'
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(8,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(8,12): error C2065: 'Color': undeclared identifier
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessPieceWidget.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(8,18): error C2146: syntax error: missing ')' before identifier 'color'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(8,33): error C2653: 'Type': is not a class or namespace name
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(8,43): error C2143: syntax error: missing ')' before ','
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(8,39): error C2512: 'Piece': no appropriate default constructor available
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(17,7):
-  see declaration of 'Piece'
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(8,50): error C2059: syntax error: ')'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(9,5): error C2059: syntax error: 'if'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(9,27): error C2143: syntax error: missing ';' before '{'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(9,27): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(12,16): error C2143: syntax error: missing ';' before '++'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(12,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(12,16): error C2059: syntax error: '++'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(14,5): error C2059: syntax error: 'if'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(14,18): error C2653: 'Color': is not a class or namespace name
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(14,32): error C2143: syntax error: missing ';' before '{'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(14,32): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(17,5): error C2059: syntax error: 'else'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(17,10): error C2143: syntax error: missing ';' before '{'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(17,10): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(20,1): error C2059: syntax error: '}'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(20,1): error C2143: syntax error: missing ';' before '}'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(22,8): error C2027: use of undefined type 'King'
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(10,7):
-  see declaration of 'King'
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(22,15): error C2143: syntax error: missing ';' before '{'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.cpp(22,15): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'main.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'main.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'main.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'main.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(30,45): error C2061: syntax error: identifier 'ChessBoard'
-  (compiling source file 'main.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'main.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'main.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'main.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'main.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'main.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_ChessBoard.cpp')
   
 C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'main.cpp')
+  (compiling source file 'Chess/x64/Debug/moc/moc_ChessBoard.cpp')
   
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'RAII.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'RAII.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'RAII.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'RAII.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(30,45): error C2061: syntax error: identifier 'ChessBoard'
-  (compiling source file 'RAII.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'RAII.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'RAII.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'RAII.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'RAII.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(11,17): error C2871: 'board': a namespace with this name does not exist
-  (compiling source file 'main.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(11,17): error C2065: 'board': undeclared identifier
-  (compiling source file 'main.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Chess.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Chess.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Chess.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Chess.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(30,45): error C2061: syntax error: identifier 'ChessBoard'
-  (compiling source file 'Chess.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Chess.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Chess.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Chess.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Chess.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Chess.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Chess.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(11,17): error C2871: 'board': a namespace with this name does not exist
-  (compiling source file 'Chess.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.h(11,17): error C2065: 'board': undeclared identifier
-  (compiling source file 'Chess.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.cpp(15,17): error C2871: 'board': a namespace with this name does not exist
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Chess.cpp(15,17): error C2065: 'board': undeclared identifier
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(10,21): error C2504: 'Piece': base class undefined
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\King.hpp(14,10): error C2061: syntax error: identifier 'Color'
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(9,21): error C2504: 'Piece': base class undefined
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Tour.hpp(12,7): error C2061: syntax error: identifier 'Color'
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(10,23): error C2504: 'Piece': base class undefined
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(13,9): error C2061: syntax error: identifier 'Color'
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x4a that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\RAII.hpp(1,1): warning C4828: The file contains a character starting at offset 0x66 that is illegal in the current source character set (codepage 65001).
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(40,5): error C2653: 'Piece': is not a class or namespace name
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(40,18): error C3646: 'getCaseColor': unknown override specifier
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(40,30): error C2059: syntax error: '('
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(40,50): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,5): error C2653: 'Piece': is not a class or namespace name
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,18): error C3646: 'turnColor_': unknown override specifier
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,29): error C2059: syntax error: '='
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,31): error C2653: 'Piece': is not a class or namespace name
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(51,50): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(53,34): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(53,34): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(55,36): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\ChessBoard.hpp(55,36): error C2143: syntax error: missing ',' before '&'
-  (compiling source file 'Knight.cpp')
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(10,14): error C2011: 'Knight': 'class' type redefinition
-  (compiling source file 'Knight.cpp')
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(10,7):
-  see declaration of 'Knight'
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(6,9): error C2027: use of undefined type 'Knight'
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(10,7):
-  see declaration of 'Knight'
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(6,22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(6,16): error C2065: 'Color': undeclared identifier
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(6,22): error C2146: syntax error: missing ')' before identifier 'color'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(6,37): error C2653: 'Type': is not a class or namespace name
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(6,49): error C2143: syntax error: missing ')' before ','
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(6,43): error C2512: 'Piece': no appropriate default constructor available
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Piece.hpp(17,7):
-  see declaration of 'Piece'
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(6,56): error C2059: syntax error: ')'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(8,5): error C2059: syntax error: 'if'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(8,18): error C2653: 'Color': is not a class or namespace name
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(8,32): error C2143: syntax error: missing ';' before '{'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(8,32): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(11,5): error C2059: syntax error: 'else'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(11,10): error C2143: syntax error: missing ';' before '{'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(11,10): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(14,1): error C2059: syntax error: '}'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(14,1): error C2143: syntax error: missing ';' before '}'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(16,10): error C2027: use of undefined type 'Knight'
-  C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.hpp(10,7):
-  see declaration of 'Knight'
-  
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(16,19): error C2143: syntax error: missing ';' before '{'
-C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\Knight.cpp(16,19): error C2447: '{': missing function header (old-style formal list?)
+  Chess.vcxproj -> C:\Users\lucas\source\repos\lukeguevs\FINAL_INF1015\x64\Debug\Chess.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
