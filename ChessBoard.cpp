@@ -33,6 +33,7 @@ int King::compteurRoi = 0;
 		setFixedSize(8 * squareSize, 8 * squareSize);
 		Knight blackKnight(Piece::Color::BLACK);
 		Tour whiteRook(Piece::Color::WHITE);
+		Tour blackRook(Piece::Color::BLACK);
 
 		try {
 			King roi1(Piece::Color::WHITE);
@@ -41,10 +42,9 @@ int King::compteurRoi = 0;
 		catch (const std::runtime_error& e) {
 			std::cerr << "Erreur : " << e.what() << std::endl;
 		}
-		addPieceSlot(blackKnight, 3, 2);
+		addPieceSlot(blackKnight, 3, 5);
 		addPieceSlot(whiteRook, 6, 5);
-
-		findPieces();
+		addPieceSlot(blackRook, 6, 4);
 	}
 
 	void ChessBoard::setSquareSize(int size)
@@ -113,7 +113,8 @@ int King::compteurRoi = 0;
 
 
 	void ChessBoard::displayAndMove(Piece piece) {
-
+		piecesBoard.clear();
+		findPieces();
 		int posX = piece.getPosition().first;
 		int posY = piece.getPosition().second;
 		isDisplay_ = true;
@@ -188,8 +189,6 @@ int King::compteurRoi = 0;
 			}
 			addPieceSlot(piece, posX, posY);
 			});
-		piecesBoard.clear();
-		findPieces();
 	}
 
 	Piece::Color ChessBoard::getCaseColor(int posX, int posY) {
@@ -266,6 +265,7 @@ int King::compteurRoi = 0;
 				if (posX == positionX && posY == y) {
 					if (piece.getColor() != pos.getColor()) { // Opponent's piece, include this square
 						piece.addPossibleMove(positionX, y);
+						isBlocked = true;
 						break;
 					}
 					isBlocked = true;
@@ -285,6 +285,7 @@ int King::compteurRoi = 0;
 				if (posX == positionX && posY == y) {
 					if (piece.getColor() != pos.getColor()) { // Opponent's piece, include this square
 						piece.addPossibleMove(positionX, y);
+						isBlocked = true;
 						break;
 					}
 					isBlocked = true;
@@ -304,6 +305,7 @@ int King::compteurRoi = 0;
 				if (posX == x && posY == positionY) {
 					if (piece.getColor() != pos.getColor()) { // Opponent's piece, include this square
 						piece.addPossibleMove(x, positionY);
+						isBlocked = true;
 						break;
 					}
 					isBlocked = true;
@@ -323,6 +325,7 @@ int King::compteurRoi = 0;
 				if (posX == x && posY == positionY) {
 					if (piece.getColor() != pos.getColor()) { // Opponent's piece, include this square
 						piece.addPossibleMove(x, positionY);
+						isBlocked = true;
 						break;
 					}
 					isBlocked = true;
@@ -334,4 +337,20 @@ int King::compteurRoi = 0;
 		}
 	}
 
+
+	bool ChessBoard::isCheck(Piece king) {
+		if (king.getType() != Piece::Type::KING) {
+			return;
+		}
+		king.clearPossibleMoves();
+		int posX = king.getPosition().first;
+		int posY = king.getPosition().second;
+
+		for (auto& pieces : piecesBoard) {
+			modifyPossibleMoves(pieces);
+			if (pieces.getColor() != king.getColor()) {
+				std::find(pieces.getPossibleMoves().begin(), pieces.getPossibleMoves().end(), make_pair(posX, posY));
+			}
+		}
+	}
 

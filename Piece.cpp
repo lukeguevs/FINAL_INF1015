@@ -38,15 +38,16 @@
 	void Piece::setPossibleMoves(int positionX, int positionY, Type pieceType) {
 		possibleMoves.clear();
 		if (pieceType == Type::KING) {
-			possibleMoves = { { positionY + 1,positionX + 0 },
-		{ positionY + -1, positionX + 0 },
-		{ positionY + 0, positionX + 1 },
-		{ positionY + 0, positionX + -1 },
-		{ positionY + 1,positionX + 1 },
-		{ positionY + 1,positionX + -1 },
-		{ positionY + -1,positionX + 1 },
-		{ positionY + -1,positionX + -1 }
-			};
+			for (int dy = -1; dy <= 1; ++dy) {
+				for (int dx = -1; dx <= 1; ++dx) {
+					if (dy == 0 && dx == 0) continue;
+					int newY = positionY + dy;
+					int newX = positionX + dx;
+					if (newY >= 0 && newY < 8 && newX >= 0 && newX < 8) {
+						possibleMoves.push_back({ newY, newX });
+					}
+				}
+			}
 		}
 		else if (pieceType == Type::ROOK) {
 			for (int x = positionY + 1; x < 8; ++x) {

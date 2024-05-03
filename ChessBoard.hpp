@@ -41,9 +41,8 @@ public:
     QPushButton* buttons[8][8];
     Piece::Color getCaseColor(int posX, int posY);
     void modifyPossibleMoves(Piece& piece);
-    void isCheck();
+    bool isCheck(Piece piece);
     void findPieces();
-    bool isSquareOccupied(int x, int y) const;
    
 protected:
     vector<char32_t> pieceUnicode;
