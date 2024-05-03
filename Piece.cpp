@@ -91,3 +91,12 @@
 	void Piece::clearPossibleMoves() {
 		possibleMoves.clear();
 	}
+
+	void Piece::setPosition(int x, int y) {
+		position.first = x;
+		position.second = y;
+	}
+
+	pair<int, int> Piece::getPosition() const {
+		return position;
+	}

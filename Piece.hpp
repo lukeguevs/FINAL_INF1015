@@ -30,8 +30,11 @@ public:
     void setPossibleMoves(const vector<pair<int, int>>& possibleMoves);
     void addPossibleMove(int posX, int posY);
     void clearPossibleMoves();
+    void setPosition(int x, int y);
+    pair<int, int> getPosition() const;
     ~Piece();
 protected:
+    pair<int, int> position;
     Type type;
     Color color;
     char32_t unicode;

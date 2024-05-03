@@ -68,12 +68,12 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSChessBoardENDCLASS[] = {
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
        1,    3,   32,    2, 0x0a,    1 /* Public */,
        7,    1,   39,    2, 0x0a,    5 /* Public */,
-      10,    3,   42,    2, 0x0a,    7 /* Public */,
+      10,    1,   42,    2, 0x0a,    7 /* Public */,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3, QMetaType::Int, QMetaType::Int,    4,    5,    6,
     QMetaType::Void, 0x80000000 | 8,    9,
-    QMetaType::Void, 0x80000000 | 3, QMetaType::Int, QMetaType::Int,    4,    5,    6,
+    QMetaType::Void, 0x80000000 | 3,    4,
 
        0        // eod
 };
@@ -97,9 +97,7 @@ Q_CONSTINIT const QMetaObject ChessBoard::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<QPainter *, std::false_type>,
         // method 'displayAndMove'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<Piece, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>
+        QtPrivate::TypeAndForceComplete<Piece, std::false_type>
     >,
     nullptr
 } };
@@ -112,7 +110,7 @@ void ChessBoard::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->addPieceSlot((*reinterpret_cast< std::add_pointer_t<Piece>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
         case 1: _t->drawChessboard((*reinterpret_cast< std::add_pointer_t<QPainter*>>(_a[1]))); break;
-        case 2: _t->displayAndMove((*reinterpret_cast< std::add_pointer_t<Piece>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
+        case 2: _t->displayAndMove((*reinterpret_cast< std::add_pointer_t<Piece>>(_a[1]))); break;
         default: ;
         }
     }

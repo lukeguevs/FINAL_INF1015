@@ -1,7 +1,7 @@
-//Lucas Guevremont et William Faraoni
+﻿//Lucas Guevremont et William Faraoni
 //2300275 et 2301401
 //INF1015
-//�cole Polytechnique de Montr�al
+//École Polytechnique de Montréal
 //Projet Final de INF1015
 
 constexpr int BOARD_SIZE = 8;
@@ -41,7 +41,7 @@ int King::compteurRoi = 0;
 		catch (const std::runtime_error& e) {
 			std::cerr << "Erreur : " << e.what() << std::endl;
 		}
-		addPieceSlot(blackKnight, 2, 1);
+		addPieceSlot(blackKnight, 3, 2);
 		addPieceSlot(whiteRook, 6, 5);
 
 		findPieces();
@@ -88,6 +88,7 @@ int King::compteurRoi = 0;
 
 	void ChessBoard::addPieceSlot(Piece piece, int posX, int posY)
 	{
+		piece.setPosition(posX, posY);
 		isDisplay_ = false;
 		char32_t image = piece.getUnicode();
 		QString imagePiece = QString::fromUcs4(&image, 1);
@@ -105,30 +106,32 @@ int King::compteurRoi = 0;
 			if ((!(isDisplay_)) && color == turnColor_) {
 				disconnect(buttons[posY][posX], &QPushButton::clicked, this, nullptr);
 
-				displayAndMove(piece, posX, posY);
+				displayAndMove(piece);
 			}
 			});
 	}
 
 
-	void ChessBoard::displayAndMove(Piece piece, int posX, int posY) {
+	void ChessBoard::displayAndMove(Piece piece) {
+
+		int posX = piece.getPosition().first;
+		int posY = piece.getPosition().second;
 		isDisplay_ = true;
 		Piece::Type pieceType = piece.getType();
 		Piece::Color color = piece.getColor();
 
 		piece.setPossibleMoves(posX, posY, pieceType);
-		//modifyPossibleMoves(piece, posX, posY);
+		modifyPossibleMoves(piece);
 	
-		vector<pair<int, int>> movesPos = piece.getPossibleMoves();
 		QString texteBouton;
 
-		for (const auto& moves : movesPos) {
+		for (const auto& moves : piece.getPossibleMoves()) {
 			texteBouton = buttons[moves.first][moves.second]->text();
 			if (texteBouton == "") {
 				buttons[moves.first][moves.second]->setStyleSheet("color: green;");
 				buttons[moves.first][moves.second]->setText("*");
 				connect(buttons[moves.first][moves.second], &QPushButton::clicked, this, [=]() {
-					for (auto moves2 : movesPos) {
+					for (auto moves2 : piece.getPossibleMoves()) {
 						QString texteBouton2 = buttons[moves2.first][moves2.second]->text();
 						if (texteBouton2 == "*") {
 							disconnect(buttons[moves2.first][moves2.second], &QPushButton::clicked, this, nullptr);
@@ -152,9 +155,9 @@ int King::compteurRoi = 0;
 				if (color != colorCase) {
 					connect(buttons[moves.first][moves.second], &QPushButton::clicked, this, [=]() {
 						disconnect(buttons[moves.first][moves.second], &QPushButton::clicked, this, nullptr);
-						for (auto moves2 : movesPos) {
+						for (auto moves2 : piece.getPossibleMoves()) {
 							QString texteBouton2 = buttons[moves2.first][moves2.second]->text();
-							if (texteBouton2 != "") {
+							if (texteBouton2 == "*") {
 								disconnect(buttons[moves2.first][moves2.second], &QPushButton::clicked, this, nullptr);
 								buttons[moves2.first][moves2.second]->setText("");
 							}
@@ -176,7 +179,7 @@ int King::compteurRoi = 0;
 
 		connect(buttons[posY][posX], &QPushButton::clicked, this, [=]() {
 			disconnect(buttons[posY][posX], &QPushButton::clicked, this, nullptr);
-			for (auto moves : movesPos) {
+			for (auto moves : piece.getPossibleMoves()) {
 				QString texteBouton3 = buttons[moves.first][moves.second]->text();
 				if (texteBouton3 == "*") {
 					disconnect(buttons[moves.first][moves.second], &QPushButton::clicked, this, nullptr);
@@ -185,7 +188,7 @@ int King::compteurRoi = 0;
 			}
 			addPieceSlot(piece, posX, posY);
 			});
-		piecePositions.clear();
+		piecesBoard.clear();
 		findPieces();
 	}
 
@@ -199,122 +202,136 @@ int King::compteurRoi = 0;
 			}
 		}
 		return Piece::Color::BLACK;
-
 	}
+
 	void ChessBoard::findPieces() {
-		for (int col = 0; col < BOARD_SIZE ; ++col) {
-			for (int row = 0; row < 8; ++row) {
-				if (buttons[row][col]->text() != "") {
-					piecePositions.insert(make_pair(buttons[row][col]->text(), make_pair(row, col)));
+		piecesBoard.clear();
+		for (int row = 0; row < BOARD_SIZE; row++) {
+			for (int col = 0; col < BOARD_SIZE; col++) {
+				QString pieceCase = buttons[row][col]->text();
+				if (!pieceCase.isEmpty()) {
+					Piece::Type pieceType;
+					Piece::Color pieceColor;
+					if (pieceCase == QString::fromUcs4(U"\u265E")) { // ♘ (black knight)
+						pieceType = Piece::Type::KNIGHT;
+					}
+					else if (pieceCase == QString::fromUcs4(U"\u2658")) { // ♘ (white knight)
+						pieceType = Piece::Type::KNIGHT;
+					}
+					else if (pieceCase == QString::fromUcs4(U"\u265C")) { // ♜ (black rook)
+						pieceType = Piece::Type::ROOK;
+					}
+					else if (pieceCase == QString::fromUcs4(U"\u2656")) { // ♜ (white rook)
+						pieceType = Piece::Type::ROOK;
+					}
+					else if (pieceCase == QString::fromUcs4(U"\u265A")) { // ♚ (black king)
+						pieceType = Piece::Type::KING;
+					}
+					else if (pieceCase == QString::fromUcs4(U"\u2654")) { // ♚ (white king)
+						pieceType = Piece::Type::KING;
+					}
+					else {
+						continue;
+					}
+					if (getCaseColor(row, col) == Piece::Color::WHITE) {
+						pieceColor = Piece::Color::WHITE;
+					}
+					else {
+						pieceColor = Piece::Color::BLACK;
+					}
+					Piece piece(pieceType, pieceColor);
+					piece.setPosition(row, col);
+					piecesBoard.push_back(piece);
 				}
 			}
 		}
 	}
 
-	bool ChessBoard::isSquareOccupied(int x, int y) const {
-		if (x < 0 || x >= BOARD_SIZE || y < 0 || y >= BOARD_SIZE) {
-			return false;
+	void ChessBoard::modifyPossibleMoves(Piece& piece) {
+		if (piece.getType() != Piece::Type::ROOK) {
+			return;
 		}
 
-		return piecePositions.find(buttons[y][x]->text()) != piecePositions.end();
-	}
-
-	void ChessBoard::modifyPossibleMoves(Piece& piece, int posX, int posY) {
 		piece.clearPossibleMoves();
-		Piece::Type pieceType = piece.getType();
 
-		if (pieceType == Piece::Type::ROOK || pieceType == Piece::Type::KING || pieceType == Piece::Type::KNIGHT) {
-			// Clear existing possibleMoves
+		int positionY = piece.getPosition().first;
+		int positionX = piece.getPosition().second;
 
-			// Modify possibleMoves based on the presence of other pieces
-			// Iterate over rows and columns to check for obstacles
-			// Modify possibleMoves accordingly
-
-			// For Rook
-			if (pieceType == Piece::Type::ROOK) {
-				// Modify possibleMoves for rook movement
-				// Check horizontally and vertically for obstacles
-				for (int x = posX + 1; x < BOARD_SIZE; ++x) {
-					if (isSquareOccupied(x, posY)) {
-						if (piece.getColor() != getCaseColor(x, posY)) {
-							piece.addPossibleMove(x, posY); // Include the square with opposing piece
-						}
-						break; // Stop adding moves in this direction
+		// Check squares to the right of the rook
+		for (int y = positionY + 1; y < 8; ++y) {
+			bool isBlocked = false;
+			for (const auto& pos : piecesBoard) {
+				int posX, posY;
+				tie(posX, posY) = pos.getPosition();
+				if (posX == positionX && posY == y) {
+					if (piece.getColor() != pos.getColor()) { // Opponent's piece, include this square
+						piece.addPossibleMove(positionX, y);
+						break;
 					}
-					piece.addPossibleMove(x, posY);
-				}
-				for (int x = posX - 1; x >= 0; --x) {
-					if (isSquareOccupied(x, posY)) {
-						if (piece.getColor() != getCaseColor(x, posY)) {
-							piece.addPossibleMove(x, posY); // Include the square with opposing piece
-						}
-						break; // Stop adding moves in this direction
-					}
-					piece.addPossibleMove(x, posY);
-				}
-				for (int y = posY + 1; y < BOARD_SIZE; ++y) {
-					if (isSquareOccupied(posX, y)) {
-						if (piece.getColor() != getCaseColor(posX, y)) {
-							piece.addPossibleMove(posX, y); // Include the square with opposing piece
-						}
-						break; // Stop adding moves in this direction
-					}
-					piece.addPossibleMove(posX, y);
-				}
-				for (int y = posY - 1; y >= 0; --y) {
-					if (isSquareOccupied(posX, y)) {
-						if (piece.getColor() != getCaseColor(posX, y)) {
-							piece.addPossibleMove(posX, y); // Include the square with opposing piece
-						}
-						break; // Stop adding moves in this direction
-					}
-					piece.addPossibleMove(posX, y);
+					isBlocked = true;
+					break;
 				}
 			}
+			if (isBlocked) break;
+			piece.addPossibleMove(positionX, y);
+		}
 
-			// For King
-			else if (pieceType == Piece::Type::KING) {
-				// Modify possibleMoves for king movement
-				// Check all adjacent squares for obstacles
-				for (int dx = -1; dx <= 1; ++dx) {
-					for (int dy = -1; dy <= 1; ++dy) {
-						int newX = posX + dx;
-						int newY = posY + dy;
-						if (newX >= 0 && newX < BOARD_SIZE && newY >= 0 && newY < BOARD_SIZE) {
-							if (!isSquareOccupied(newX, newY)) {
-								piece.addPossibleMove(newX, newY);
-							}
-							else if (piece.getColor() != getCaseColor(newX, newY)) {
-								piece.addPossibleMove(newX, newY);
-							}
-						}
+		// Check squares to the left of the rook
+		for (int y = positionY - 1; y >= 0; --y) {
+			bool isBlocked = false;
+			for (const auto& pos : piecesBoard) {
+				int posX, posY;
+				tie(posX, posY) = pos.getPosition();
+				if (posX == positionX && posY == y) {
+					if (piece.getColor() != pos.getColor()) { // Opponent's piece, include this square
+						piece.addPossibleMove(positionX, y);
+						break;
 					}
+					isBlocked = true;
+					break;
 				}
 			}
+			if (isBlocked) break;
+			piece.addPossibleMove(positionX, y);
+		}
 
-			// For Knight
-			else if (pieceType == Piece::Type::KNIGHT) {
-				// Modify possibleMoves for knight movement
-				// Knights can jump over other pieces, so no need to check for obstacles
-				int knightMoves[8][2] = {
-					{1, 2}, {1, -2}, {-1, 2}, {-1, -2},
-					{2, 1}, {2, -1}, {-2, 1}, {-2, -1}
-				};
-
-				for (const auto& move : knightMoves) {
-					int newX = posX + move[0];
-					int newY = posY + move[1];
-
-					if (newX >= 0 && newX < BOARD_SIZE && newY >= 0 && newY < BOARD_SIZE) {
-						if (!isSquareOccupied(newX, newY)) {
-							piece.addPossibleMove(newX, newY);
-						}
-						else if (piece.getColor() != getCaseColor(newX, newY)) {
-							piece.addPossibleMove(newX, newY);
-						}
+		// Check squares above the rook
+		for (int x = positionX + 1; x < 8; ++x) {
+			bool isBlocked = false;
+			for (const auto& pos : piecesBoard) {
+				int posX, posY;
+				tie(posX, posY) = pos.getPosition();
+				if (posX == x && posY == positionY) {
+					if (piece.getColor() != pos.getColor()) { // Opponent's piece, include this square
+						piece.addPossibleMove(x, positionY);
+						break;
 					}
+					isBlocked = true;
+					break;
 				}
 			}
+			if (isBlocked) break;
+			piece.addPossibleMove(x, positionY);
+		}
+
+		// Check squares below the rook
+		for (int x = positionX - 1; x >= 0; --x) {
+			bool isBlocked = false;
+			for (const auto& pos : piecesBoard) {
+				int posX, posY;
+				tie(posX, posY) = pos.getPosition();
+				if (posX == x && posY == positionY) {
+					if (piece.getColor() != pos.getColor()) { // Opponent's piece, include this square
+						piece.addPossibleMove(x, positionY);
+						break;
+					}
+					isBlocked = true;
+					break;
+				}
+			}
+			if (isBlocked) break;
+			piece.addPossibleMove(x, positionY);
 		}
 	}
+
 
