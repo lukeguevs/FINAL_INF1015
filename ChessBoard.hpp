@@ -21,36 +21,37 @@
 #include "Tour.hpp"
 #include "Knight.hpp"
 #include "RAII.hpp"
+using namespace std;
 
 
-    class ChessBoard : public QWidget
-    {
-        Q_OBJECT
-    public:
-        ChessBoard(QWidget* parent);
-        ~ChessBoard();
-        ChessBoard();
+class ChessBoard : public QWidget
+{
+    Q_OBJECT
+public:
+    ChessBoard(QWidget* parent);
+    ~ChessBoard();
+    ChessBoard();
 
-        void setSquareSize(int size);
-        int squareSize;
-        QVector<QRect> squares;
-        ChessPieceWidget* chessPieceWidget;
-        QPushButton* buttons[8][8];
-        Piece::Color getCaseColor(int posX, int posY);
-        bool isPathBlocked(int startY, int startX, int endY, int endX) const;
-        void isCheck();
-        void findPieces();
-        bool isSquareOccupied(int x, int y) const;
-    protected:
-        vector<char32_t> pieceUnicode;
-        void paintEvent(QPaintEvent* event) override;
-    private:
-        unordered_map<QString, pair<int, int>> piecePositions;
-        bool isDisplay_ = false;
-        Piece::Color turnColor_ = Piece::Color::WHITE;
-    public slots:
-        void addPieceSlot(const Piece& piece, int posX, int posY);
-        void drawChessboard(QPainter* painter);
-        void displayAndMove(const Piece& piece, int posX, int posY);
-    };
+    void setSquareSize(int size);
+    int squareSize;
+    QVector<QRect> squares;
+    ChessPieceWidget* chessPieceWidget;
+    QPushButton* buttons[8][8];
+    Piece::Color getCaseColor(int posX, int posY);
+    bool isPathBlocked(int startY, int startX, int endY, int endX) const;
+    void isCheck();
+    void findPieces();
+    bool isSquareOccupied(int x, int y) const;
+protected:
+    vector<char32_t> pieceUnicode;
+    void paintEvent(QPaintEvent* event) override;
+private:
+    unordered_map<QString, pair<int, int>> piecePositions;
+    bool isDisplay_ = false;
+    Piece::Color turnColor_ = Piece::Color::WHITE;
+public slots:
+    void addPieceSlot(const Piece& piece, int posX, int posY);
+    void drawChessboard(QPainter* painter);
+    void displayAndMove(const Piece& piece, int posX, int posY);
+};
 

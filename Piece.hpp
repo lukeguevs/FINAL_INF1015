@@ -12,6 +12,7 @@
 #include <QDir>
 #include <vector>
 #include "ChessBoard.hpp"
+using namespace std;
 
 class Piece
 {
