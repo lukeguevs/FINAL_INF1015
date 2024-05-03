@@ -33,18 +33,8 @@ namespace board {
 		Knight blackKnight(Piece::Color::BLACK);
 		Tour whiteRook(Piece::Color::WHITE);
 		
-		try{
 		King roi1(Piece::Color::WHITE);
 		addPieceSlot(roi1, 4, 6);
-		King roi2(Piece::Color::WHITE);
-		addPieceSlot(roi2, 5, 6);
-		King roi3(Piece::Color::WHITE);
-		addPieceSlot(roi3, 6, 6);
-		}
-		catch (const std::runtime_error& e) {
-			std::cerr << "Erreur : " << e.what() << std::endl;
-			
-		}
 		
 		addPieceSlot(blackKnight,2,1);
 		addPieceSlot(whiteRook,6,5);

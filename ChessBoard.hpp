@@ -33,26 +33,27 @@ namespace board {
         ChessBoard();
 
         void setSquareSize(int size);
-        void addPiece(const QString& pieceName);
         int squareSize;
         QVector<QRect> squares;
-        QMap<QString, QPixmap> pieceImages;
         ChessPieceWidget* chessPieceWidget;
         QPushButton* buttons[8][8];
-        void findPieces();
         Piece::Color getCaseColor(int posX, int posY);
         bool isPathBlocked(int startY, int startX, int endY, int endX) const;
+        void isCheck();
+        void findPieces();
         bool isSquareOccupied(int x, int y) const;
-    
     protected:
-        unordered_map<QString, pair<int, int>> piecePositions;
+        vector<char32_t> pieceUnicode;
         void paintEvent(QPaintEvent* event) override;
-        //void mousePressEvent(QMouseEvent* event) override;
-
+    private:
+        unordered_map<QString, pair<int, int>> piecePositions;
+        bool isDisplay_ = false;
+        Piece::Color turnColor_ = Piece::Color::WHITE;
     public slots:
         void addPieceSlot(const Piece& piece, int posX, int posY);
         void drawChessboard(QPainter* painter);
         void displayAndMove(const Piece& piece, int posX, int posY);
     };
+
 
 }
