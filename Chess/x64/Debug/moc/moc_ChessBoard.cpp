@@ -45,7 +45,7 @@ constexpr auto qt_meta_stringdata_CLASSboardSCOPEChessBoardENDCLASS = QtMocHelpe
     "drawChessboard",
     "QPainter*",
     "painter",
-    "displayPossibleMoves"
+    "displayAndMove"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -95,7 +95,7 @@ Q_CONSTINIT const QMetaObject board::ChessBoard::staticMetaObject = { {
         // method 'drawChessboard'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QPainter *, std::false_type>,
-        // method 'displayPossibleMoves'
+        // method 'displayAndMove'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const Piece &, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
@@ -112,7 +112,7 @@ void board::ChessBoard::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         switch (_id) {
         case 0: _t->addPieceSlot((*reinterpret_cast< std::add_pointer_t<Piece>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
         case 1: _t->drawChessboard((*reinterpret_cast< std::add_pointer_t<QPainter*>>(_a[1]))); break;
-        case 2: _t->displayPossibleMoves((*reinterpret_cast< std::add_pointer_t<Piece>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
+        case 2: _t->displayAndMove((*reinterpret_cast< std::add_pointer_t<Piece>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
         default: ;
         }
     }
