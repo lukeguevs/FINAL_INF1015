@@ -13,24 +13,24 @@
 #include <vector>
 #include "ChessBoard.hpp"
 
-    class Piece
-    {
-    public:
-        enum class Type {ROOK, KING, KNIGHT};
-        enum class Color { WHITE, BLACK };
+class Piece
+{
+public:
+    enum class Type {ROOK, KING, KNIGHT};
+    enum class Color { WHITE, BLACK };
         
-        Piece(Type type, Color color);
-        Type getType() const;
-        Color getColor() const;
-        char32_t getUnicode() const ;
-        void setColor(Color newColor);
-        void setType(Type newType);
-        void setUnicode(char32_t newUnicode);
-        vector<pair<int, int>> getPossibleMoves(ChessBoard* chessboard,int positionY, int positionX,Type type) const;
-        ~Piece();
-    protected:
-        Type type;
-        Color color;
-        char32_t unicode;
-    };
+    Piece(Type type, Color color);
+    Type getType() const;
+    Color getColor() const;
+    char32_t getUnicode() const ;
+    void setColor(Color newColor);
+    void setType(Type newType);
+    void setUnicode(char32_t newUnicode);
+    vector<pair<int, int>> getPossibleMoves(ChessBoard* chessboard,int positionY, int positionX,Type type) const;
+    ~Piece();
+protected:
+    Type type;
+    Color color;
+    char32_t unicode;
+};
 

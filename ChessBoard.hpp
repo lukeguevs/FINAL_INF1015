@@ -5,6 +5,7 @@
 //Projet Final de INF1015
 
 #pragma once
+#include <vector>
 #include <unordered_map>
 #include <QWidget>
 #include <QVector>

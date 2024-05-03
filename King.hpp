@@ -7,8 +7,6 @@
 #include "Piece.hpp"
 #include <vector>
 
-using namespace chess;
-
 class King : public Piece {
 private:
     static int compteurRoi;

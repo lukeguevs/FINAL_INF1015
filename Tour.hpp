@@ -6,8 +6,6 @@
 
 #include "Piece.hpp"
 
-using namespace chess;
-
 class Tour : public Piece {
 public:
 

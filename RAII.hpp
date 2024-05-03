@@ -10,7 +10,6 @@
 #include <vector>
 #include <iostream>
 #include <QObject>
-using namespace chess;
 
 /*
 class RAII : public QObject{

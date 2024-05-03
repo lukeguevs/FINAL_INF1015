@@ -6,7 +6,6 @@
 
 #include "Piece.hpp"
 
-using namespace chess;
 
 class Knight : public Piece {
 public:
