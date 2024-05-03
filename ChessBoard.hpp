@@ -21,7 +21,6 @@
 #include "Knight.hpp"
 #include "RAII.hpp"
 
-namespace board {
 
     class ChessBoard : public QWidget
     {
@@ -37,9 +36,10 @@ namespace board {
         ChessPieceWidget* chessPieceWidget;
         QPushButton* buttons[8][8];
         Piece::Color getCaseColor(int posX, int posY);
+        bool isPathBlocked(int startY, int startX, int endY, int endX) const;
         void isCheck();
         void findPieces();
-        
+        bool isSquareOccupied(int x, int y) const;
     protected:
         vector<char32_t> pieceUnicode;
         void paintEvent(QPaintEvent* event) override;
@@ -53,4 +53,3 @@ namespace board {
         void displayAndMove(const Piece& piece, int posX, int posY);
     };
 
-}

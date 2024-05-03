@@ -11,10 +11,7 @@
 #include <QPixmap>
 #include <QDir>
 #include <vector>
-using namespace std;
-
-
-namespace chess {
+#include "ChessBoard.hpp"
 
     class Piece
     {
@@ -29,7 +26,7 @@ namespace chess {
         void setColor(Color newColor);
         void setType(Type newType);
         void setUnicode(char32_t newUnicode);
-        vector<pair<int, int>> getPossibleMoves(int positionY, int positionX,Type type) const;
+        vector<pair<int, int>> getPossibleMoves(ChessBoard* chessboard,int positionY, int positionX,Type type) const;
         ~Piece();
     protected:
         Type type;
@@ -37,4 +34,3 @@ namespace chess {
         char32_t unicode;
     };
 
-}
