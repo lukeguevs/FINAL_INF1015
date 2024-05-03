@@ -251,7 +251,7 @@ int King::compteurRoi = 0;
 		if (piece.getType() != Piece::Type::ROOK) {
 			return;
 		}
-
+		bool isBlocked;
 		piece.clearPossibleMoves();
 
 		int positionY = piece.getPosition().first;
@@ -259,7 +259,7 @@ int King::compteurRoi = 0;
 
 		// Check squares to the right of the rook
 		for (int y = positionY + 1; y < 8; ++y) {
-			bool isBlocked = false;
+			isBlocked = false;
 			for (const auto& pos : piecesBoard) {
 				int posX, posY;
 				tie(posX, posY) = pos.getPosition();
@@ -278,7 +278,7 @@ int King::compteurRoi = 0;
 
 		// Check squares to the left of the rook
 		for (int y = positionY - 1; y >= 0; --y) {
-			bool isBlocked = false;
+			isBlocked = false;
 			for (const auto& pos : piecesBoard) {
 				int posX, posY;
 				tie(posX, posY) = pos.getPosition();
@@ -297,7 +297,7 @@ int King::compteurRoi = 0;
 
 		// Check squares above the rook
 		for (int x = positionX + 1; x < 8; ++x) {
-			bool isBlocked = false;
+			isBlocked = false;
 			for (const auto& pos : piecesBoard) {
 				int posX, posY;
 				tie(posX, posY) = pos.getPosition();
@@ -316,7 +316,7 @@ int King::compteurRoi = 0;
 
 		// Check squares below the rook
 		for (int x = positionX - 1; x >= 0; --x) {
-			bool isBlocked = false;
+			isBlocked = false;
 			for (const auto& pos : piecesBoard) {
 				int posX, posY;
 				tie(posX, posY) = pos.getPosition();
