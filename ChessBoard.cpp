@@ -116,8 +116,8 @@ int King::compteurRoi = 0;
 		Piece::Type pieceType = piece.getType();
 		Piece::Color color = piece.getColor();
 
-		/*piece.setPossibleMoves(posX, posY, pieceType);*/
-		modifyPossibleMoves(piece, posX, posY);
+		piece.setPossibleMoves(posX, posY, pieceType);
+		//modifyPossibleMoves(piece, posX, posY);
 	
 		vector<pair<int, int>> movesPos = piece.getPossibleMoves();
 		QString texteBouton;
