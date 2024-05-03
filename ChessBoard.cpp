@@ -127,7 +127,7 @@ namespace board {
 		Piece::Type pieceType = piece.getType();
 		Piece::Color color = piece.getColor();
 
-		vector<pair<int, int>> movesPos = piece.getPossibleMoves(this, posX, posY, pieceType);
+		vector<pair<int, int>> movesPos = piece.getPossibleMoves(posX, posY, pieceType);
 		QString texteBouton;
 
 		for (const auto& moves : movesPos) {
